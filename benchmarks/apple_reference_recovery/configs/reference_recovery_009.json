@@ -1,0 +1,19 @@
+{
+  "walk_feedback_limit": 0,
+  "brake": false,
+  "height": 0.76,
+  "root_feedback": true,
+  "root_target": [
+    -0.65,
+    0
+  ],
+  "root_gain": 0.7,
+  "contact_duration": 1.0,
+  "offset": [
+    0,
+    0,
+    0.04
+  ],
+  "correction_gain": 0.4,
+  "diagnosis": "Attempt8 fixed reverse action overcorrected. Use root-error feedback during reaching, no extra gait segment, shorter contact transition."
+}

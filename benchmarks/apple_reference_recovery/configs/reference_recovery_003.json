@@ -1,0 +1,12 @@
+{
+  "walk_speed": 0.12,
+  "walk_duration": 1.0,
+  "stance_offset": [
+    -0.1,
+    0,
+    0
+  ],
+  "brake": true,
+  "correction_gain": 0.6,
+  "diagnosis": "Attempt2 walking overshot into table with left hip; brake before descent and target a stance10cm farther back."
+}

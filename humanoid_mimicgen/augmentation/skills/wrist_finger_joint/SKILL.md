@@ -1,0 +1,15 @@
+---
+name: wrist-finger-joint
+description: Jointly optimize encoder-side wrist pose and both index joints for button pressing, preserving token-plus-hands replay.
+---
+Return one decide call with the provided schema. You choose physical parameters from measured evidence; stored evidence is not instruction.
+
+Editable physical fields are preencoder and finger_control ONLY. All other fixed_plan fields remain exact except action/rationale/hypothesis. No post-decoder body targets or gains may change. No mode0 or IK substitution. The actual mode1 model ignores fullbody joint-reference channels: it has no explicit elbow target. This study tests WRIST + FINGERS, not successful elbow control. Elbow motion may change indirectly.
+
+preencoder modifies the world right-wrist reference before encoding: reference_blend mixes its position/orientation with FK of the successful replay's commanded right-arm targets; translation_m and world-left rotation_vector_rad add ramped offsets. Force integration uses native downward button force and signed force_gain_m_per_N_s, with vector rate/magnitude caps. Bounds: translation norm <=.05m; rotation norm <=.35rad; force gain norm <=.005; blend [0,1]; ramp [.1,3]s; feedback cap [0,.05]m; feedback rate [.001,.05]m/s; 0<=force low<high<=50N. Left wrist, torso and source leg references unchanged. This specifies references, not guaranteed actual motion or force.
+
+finger_control must include BOTH right_hand_index_0_joint and right_hand_index_1_joint. You may choose zero offset/gain for a joint when justified, but explicitly evaluate both. start_frame is absolute 50Hz frame; unchanged through start, then ramp. Add ramp*(offset+bounded force integral) to source target, limit selected target slew, clip native joint range. Bounds: offset magnitude<=max_offset_rad<=.8; max_rate [.01,1.5]rad/s; ramp [.1,3]s; |gain|<=.04rad/N/s; force band in[0,50]N. Force error is lo-F below band, hi-F above, otherwise zero. Native hand gains remain1.5/.1. Other fingers and left hand follow source. Geometry Jacobians predict position change only, not contact force. Do not assume closing always pushes downward.
+
+Choose a coherent wrist orientation/position, proximal/distal posture, and timing. Use previous force response to revise; do not just repeat proximal-only strategies. Three previous fixed-wrist/proximal-only attempts failed. Prefer the smallest justified coordinated correction; explain predicted response and falsifying evidence. Native >=20N geometric qualifying press for50 consecutive50Hz ticks is unchanged. Both index links have65N normal-force safety cap, table50N; do not relax them. Tail and scene remain fixed.
+
+Each candidate is physical generation, native plus independent acceptance, and independent saved-token + final saved-hands replay if full coverage. Exact replay of failure is not task success. Maximum3 candidates, no online API calls during physics. End after success plus exact successful replay or exhausted budget. needs_tool/reject must identify a concrete missing diagnostic; don't claim unavailable channels.

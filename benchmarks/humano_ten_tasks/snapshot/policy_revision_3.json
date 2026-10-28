@@ -1,0 +1,7 @@
+{
+  "unix_s": 1791855302.1572313,
+  "old_sha256": "b94eaf55db78ef92fb1f72faf8511c080ccefdbfea0570d8a2a193853ff68de3",
+  "new_sha256": "5657afc27d8bb95a6732225b7233243584a2e6dfca735b0416658a1fe1e2feac",
+  "boundary": "Bottle running with already loaded v3; Box, Apple, Button, Plate not started and will use v4. Completed cases are not rerun.",
+  "reason": "Reference exhaustion caused premature task termination despite remaining simulation budget. If measured target hand contacts remain valid, allow an additional bounded 3.5cm lift followed by feedback; otherwise hold/end. Fixed native controller gates, criteria and budgets remain unchanged."
+}

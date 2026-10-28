@@ -1,0 +1,25 @@
+{
+  "started_unix_s": 1791867087.2412887,
+  "reference_episode": 0,
+  "source_sha256": "d6f2cf19b79d3563072c55e7f7e3a750302131f1dfcec502e3939f3c4f6d980b",
+  "source_saved_state_success": false,
+  "source_status": "candidate requires current-interface recovery; not asserted successful",
+  "recovery_attempt_budget": 10,
+  "generation_attempt_budget": 10,
+  "attempt_sim_s": 30,
+  "feedback_calls": 12,
+  "variant_translation": [
+    0,
+    0.1,
+    0
+  ],
+  "live_model_api": false,
+  "control_changes": false,
+  "physics_changes": false,
+  "success_criteria_changes": false,
+  "human_candidates": [
+    "Reference hand-wrap sequence with actual finger commands",
+    "Measured Cartesian approach with SONIC legs and closed-loop wrist correction"
+  ],
+  "first_prediction": "Removing gratuitous alignment and reproducing complete source body preview should restore forward approach; measured root and wrist must be checked before closure."
+}

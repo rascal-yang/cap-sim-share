@@ -1,0 +1,19 @@
+{
+  "walk_speed": 0.22,
+  "walk_duration": 1.0,
+  "stance_offset": [
+    -0.1,
+    0,
+    0
+  ],
+  "stop_distance": 0.11,
+  "constant_walk": true,
+  "brake": true,
+  "offset": [
+    0,
+    0,
+    0.02
+  ],
+  "correction_gain": 0.3,
+  "diagnosis": "Attempt3 near-zero walking caused long arm reach to pull root; use nonzero gait constant speed and early braking, with2cm raised wrist clearance."
+}

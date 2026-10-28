@@ -1,0 +1,74 @@
+[
+  {
+    "task": "G1WholebodyGroundBasketPickTeleop",
+    "attempt": 2,
+    "failure": "infrastructure_timeout_waiting_for_GPT",
+    "last_measured_sim_s": 3.999999999999937,
+    "full_states_available": false,
+    "complete_evidence": false
+  },
+  {
+    "task": "G1WholebodyGroundBottlePickTeleop",
+    "attempt": 4,
+    "failure": "infrastructure_process_lost",
+    "last_measured_sim_s": 24.59999999999939,
+    "full_states_available": false,
+    "complete_evidence": false
+  },
+  {
+    "task": "G1WholebodyGroundBoxPickTeleop",
+    "attempt": 1,
+    "failure": "infrastructure_timeout_waiting_for_GPT",
+    "last_measured_sim_s": 12.60000000000057,
+    "full_states_available": false,
+    "complete_evidence": false
+  },
+  {
+    "task": "G1WholebodyGroundBoxPickTeleop",
+    "attempt": 3,
+    "failure": "infrastructure_process_lost",
+    "last_measured_sim_s": 24.74999999999936,
+    "full_states_available": false,
+    "complete_evidence": false
+  },
+  {
+    "task": "G1WholebodyTableApplePickTeleop",
+    "attempt": 6,
+    "failure": "infrastructure_timeout_waiting_for_GPT",
+    "last_measured_sim_s": 3.999999999999937,
+    "full_states_available": false,
+    "complete_evidence": false
+  },
+  {
+    "task": "G1WholebodyTableApplePickTeleop",
+    "attempt": 8,
+    "failure": "infrastructure_process_lost",
+    "last_measured_sim_s": 25.09999999999929,
+    "full_states_available": false,
+    "complete_evidence": false
+  },
+  {
+    "task": "G1WholebodyTableButtonPressTeleop",
+    "attempt": 7,
+    "failure": "infrastructure_process_lost",
+    "last_measured_sim_s": 13.95000000000078,
+    "full_states_available": true,
+    "complete_evidence": false
+  },
+  {
+    "task": "G1WholebodyTablePlatePickTeleop",
+    "attempt": 1,
+    "failure": "infrastructure_timeout_waiting_for_GPT",
+    "last_measured_sim_s": 13.000000000000632,
+    "full_states_available": false,
+    "complete_evidence": false
+  },
+  {
+    "task": "G1WholebodyTablePlatePickTeleop",
+    "attempt": 3,
+    "failure": "infrastructure_process_lost",
+    "last_measured_sim_s": 25.09999999999929,
+    "full_states_available": false,
+    "complete_evidence": false
+  }
+]

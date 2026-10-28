@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "Preparation JSON/draft validation, preserved baseline and existing source hashes",
+  "preserved_baseline_files": 6,
+  "preserved_existing_source_files": 70,
+  "draft_published": false,
+  "runtime_isolation_implemented": false,
+  "physics_steps": 0,
+  "API_calls": 0
+}

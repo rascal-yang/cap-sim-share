@@ -1,0 +1,5 @@
+{
+  "attempt": 9,
+  "observed": "Root-error velocity feedback with large arm targets failed to settle; root drifted to x=-1.929, target exceeded1.5m workspace and was rejected. No target contact.",
+  "next_change": "Last attempt discriminates measured-pose versus source commanded-target reference. Original encoder_obs is all NaN, source runs used recorded tokens; exact original encoder reference cannot be recovered from this episode."
+}

@@ -1,0 +1,130 @@
+# G1 / Dex3 单手抓苹果：可重新选择策略的任务 skill
+
+版本用途：为 GPT 提供任务级经验，不替代控制器，也不是必须逐帧复现的轨迹。
+更新单位：一次尝试内固定；失败或成功后基于证据生成新版本，下一次尝试可立即采用。
+
+## 任务不变量
+
+- 任务：从桌面抓起苹果。当前验收使用任务自带原生程序，约抬升 9 cm；没有额外验收 1 秒保持。
+- 不修改物理参数、验收标准、控制权限或试验总预算。次数与时限从当前任务配置读取。
+- 只有实际接触满足现有控制器门限才能抬升；目标点到位或程序完成不等于抓取成功。
+- 当前后端持续手部接触门限 0.12 s；机器人碰桌力 >5 N 持续 0.05 s 会停止。
+- 当前停止规则不等于对每个手指、每类障碍物的完整安全保证，不能推断“零碰撞”。
+- 当前关闭减速优化；获得成功必须先保存，不因候选优化或新策略失败删除已有成功。
+
+## 示范中关键的、可迁移的信息
+
+1. 抓握使用右手拇指与食指在苹果相对两侧建立接触，再抬升；接触部件名和局部坐标是证据。
+2. 参考中选取 8.905–9.100 s 的持续接触窗口（40 个 5 ms 物理步）：
+   - 食指 `right_hand_index_1_link`，物体局部位置约 `[0.037127, -0.005921, 0.011521]` m。
+   - 拇指 `right_hand_thumb_2_link`，物体局部位置约 `[-0.035341, -0.014011, 0.011089]` m。
+   - 窗口内最大局部偏差分别约 1.02 mm、0.76 mm。
+3. 运行时优先使用 `contact_privileged.reference_priors` 精确数据，不以本文四舍五入值替代。
+   目标映射为 `p_world = object_position + R_object @ (scale_ratio * p_object)`，四元数 wxyz。
+4. 接触点相对手腕的位置与物体局部位置一起给出刚性手腕初值；尺寸变化仍可能要求调整手指。
+5. 参考力是实测观测，不是允许任意尺寸使用的夹持力目标。当前接口没有显式夹持力控制契约。
+6. 接触之前应确认接近方向、手腕朝向和手指开合适配几何；换站位后必须重新获取物体与手的相对关系。
+
+## 可变策略与目前证据范围
+
+- `reference_local`（observed）：保留原前 5 秒 native token，后续参考关键帧按接触几何调整右臂。
+  新接触点版本只验证了 X +10 cm 与尺寸 +10%，各一次。旧手腕偏移版本还验证了 Y −10 cm、桌高 ±5 cm，各一次。
+  不把这些点解释为整个范围都稳定成功。native_prefix 只在实验 HybridBackend 明确提供时可调用。
+- `reposition_then_grasp`（candidate）：物体超出当前合适操作范围时，先改变基座位置/朝向，停止后重新观察，再选择抓点与腕姿。
+  当前接口提供 SONIC 速度、朝向、骨盆高度目标；大位移后抓苹果尚未验证。
+- `adjust_stance_then_grasp`（candidate）：桌高或接近角度变化时，改变骨盆高度/躯干姿态，稳定后重新定位右手。
+  不把接口允许的骨盆高度 0.4–0.85 m 当作该任务已验证的安全范围。
+- `alternate_contact_region`（candidate）：原接触区域被遮挡、几何对应失效或抓取方向改变时，重新选可达的对向接触区、腕姿和手指动作。
+  新接触点必须标为假设。苹果以外的形状、换手、换机器人不能直接沿用本示范坐标。
+- 允许 GPT 提出 `new_hypothesis`，但必须说明当前证据为何支持尝试、需要哪些控制通道、如何检查失败；不得自称已验证。
+
+## 当前接口与执行限制
+
+真正可执行的动作以本次 `interface` 为准。以下是 native HUMANO 后端支持的候选通道：
+`velocity_xy`, `facing_yaw`, `pelvis_height_m`, `torso_quaternion_wxyz`,
+`right_position`, `right_quaternion_wxyz`, `right_fingers`, `body_keyframes`。
+
+- 无 `body_keyframes` 的动作使用 SONIC planner 下肢参考与 Cartesian 上身跟踪。
+- 提供 `body_keyframes` 时进入全身参考模式。不得同时假定 `velocity_xy` 会重新规划下肢。
+- 控制接口支持某个通道，不等于该任务上该模式已经成功。前期全轨迹重编码曾失败；保留该限制。
+- 单段时长、关节限位、速度限制和动作格式由实际接口限定。先输出短阶段，不让模型逐帧控制。
+- 不存在通用的 `go_to_stance()`、`grasp()` 或 `set_grip_force()` 执行 API。下文函数是推理步骤，必须编译成接口允许的 JSON 动作。
+- 当前苹果局部参考适配代码不自动实现本节所有候选。选择 GPT/command 规划器才能生成不同的动作程序；固定局部适配器仍只执行原策略。
+
+## GPT 选择策略前必须知道的内容
+
+读取当前物体位姿/尺寸、桌面支撑边界和障碍物、机器人根位姿/朝向、腕姿、关节状态、控制通道与已有失败。
+参考里的桌面尺寸、物体初始位置或可见视角不是新场景事实。缺少当前碰撞几何时指出缺项，不凭旧场景假设存在自由路径。
+优先使用仿真特权几何；有实际第一/第三视角图像时辅助检查遮挡，不把未提供的视频当作已经看过。
+检查苹果是否仍在桌面支撑内：旧 X −10 cm 变体因移出桌边而无效，不能通过抓地上苹果算作原桌面任务成功。
+
+## CaP 形式的决策配方（推理伪代码）
+
+```python
+def apple_pick_skill(scene, observation, contact_prior, failure_notes, interface):
+    check_current_geometry_and_table_support()
+    candidates = propose_approach_stance_grasp_options(
+        reference_contact_anchors=contact_prior,
+        current_geometry=scene,
+        current_robot=observation,
+        prior_failures=failure_notes,
+    )
+    # 可换路线、站位、腕姿与抓点；参考动作不是必须复制的步骤。
+    strategy = choose_candidate_with_reach_clearance_and_control_support(candidates)
+    record_strategy_id_scope_evidence_and_expected_failure_modes(strategy)
+
+    if strategy.requires_new_stance:
+        emit_short_walk_or_stance_action_with_replan_after(interface)
+        # 此次只输出下一段；实际返回后再进行以下判断。
+        reobserve_root_feet_wrist_object_and_stability()
+        if stance_not_achieved_or_unstable:
+            stop_or_recover_with_available_controls()
+            return
+
+    choose_reachable_contact_regions_and_wrist_orientation()
+    emit_short_precontact_action_with_feedback()
+    compare_actual_tracking_and_clearance_before_closing_fingers()
+    if object_moved_or_tracking_failed:
+        reobserve_and_replan_contact_targets()
+        return
+
+    emit_bounded_finger_and_wrist_adjustment()
+    compare_measured_per_link_contacts_with_target_regions()
+    if actual_contact_gate_not_met:
+        diagnose_approach_vs_orientation_vs_finger_failure()
+        emit_one_supported_correction_or_end_attempt()
+        return
+
+    emit_lift_segment_with_feedback()
+    if contact_lost_or_unstable_or_blocked:
+        stop_and_enter_supported_recovery_branch()
+        return
+    if independent_native_validator_passes:
+        preserve_success()
+        # 只有任务明确启用优化，才另建候选；当前关闭。
+```
+
+阶段内反馈不算新尝试。失败后从初态重置才算下一次。所有分支仍受原始尝试数、阶段反馈次数和执行时限限制。
+不能通过重新命名阶段绕过抬升接触门限，也不能假称已执行未出现的动作。
+
+## 失败诊断与 skill 迭代
+
+每次尝试结束后先记录：使用的 skill 版本、策略、预测、实测轨迹/接触、失败阶段、实际执行用时。
+区分物体几何变化、跟踪误差、接触选择、手指闭合、步行站位能力和仿真准备错误。
+下一版可以修改选择规则、适用范围、候选策略和参数建议；不得修改硬验收、权限、物理参数或预算。
+下一次尝试立即可选最新版本；当前尝试内所有反馈继续使用同一版本。旧版本永久保留以便追溯。
+新的“observed”条目必须引用实际试验记录和适用条件；未经执行的建议保持 candidate。
+成功一次只能增加一条观测，不能写成“能处理任意桌高/任意物体位置”。
+
+## 对模型输出的要求
+
+`analysis.strategy` 写明：`strategy_id`, `applicability`, `approach`, `stance`, `grasp`,
+`next_observation_gate`, `abort_or_recovery`。说明选择理由与未验证部分。
+`actions` 仅使用运行时接口支持的动作，遇到需要反馈的阶段设 `replan_after=true`。
+不能只输出伪代码或在后台加载整条专家动作来冒充重新规划。
+
+## 已知缺口
+
+大幅站位变化后的抓取、新抓法、复杂避障、自动手指重优化尚无通过的物理证据。
+目前无外部 GPT API 规划实测；过往成功均为当前会话编写的 Python 局部策略。
+skill 为新范式提供经验与决策规则，不会凭文档增加控制器没有的能力。

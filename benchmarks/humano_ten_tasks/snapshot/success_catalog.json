@@ -1,0 +1,57 @@
+{
+  "generated_successes": [
+    {
+      "task": "G1WholebodyBallKickTeleop",
+      "group": "no_reference",
+      "trajectory": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/runs/no_reference/G1WholebodyBallKickTeleop/success/attempt_001/trajectory.json",
+      "quality": null,
+      "videos": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/videos/no_reference/G1WholebodyBallKickTeleop"
+    },
+    {
+      "task": "G1WholebodyChairPushTeleop",
+      "group": "no_reference",
+      "trajectory": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/runs/no_reference/G1WholebodyChairPushTeleop/success/attempt_002/trajectory.json",
+      "quality": null,
+      "videos": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/videos/no_reference/G1WholebodyChairPushTeleop"
+    },
+    {
+      "task": "G1WholebodyChairSitTeleop",
+      "group": "no_reference",
+      "trajectory": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/runs/no_reference/G1WholebodyChairSitTeleop/success/attempt_001/trajectory.json",
+      "quality": null,
+      "videos": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/videos/no_reference/G1WholebodyChairSitTeleop"
+    },
+    {
+      "task": "G1WholebodyDollyPushTeleop",
+      "group": "no_reference",
+      "trajectory": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/runs/no_reference/G1WholebodyDollyPushTeleop/success/attempt_002/trajectory.json",
+      "quality": null,
+      "videos": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/videos/no_reference/G1WholebodyDollyPushTeleop"
+    }
+  ],
+  "augmented_successes": [
+    {
+      "task": "G1WholebodyBallKickTeleop",
+      "group": "reference_augmented",
+      "trajectory": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/runs/reference_augmented/G1WholebodyBallKickTeleop/success/attempt_002/trajectory.json",
+      "quality": null,
+      "videos": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/videos/reference_augmented/G1WholebodyBallKickTeleop"
+    }
+  ],
+  "native_passes_excluded": [
+    {
+      "task": "G1WholebodyGroundBasketPickTeleop",
+      "group": "no_reference",
+      "trajectory": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/runs/no_reference/G1WholebodyGroundBasketPickTeleop/success/attempt_001/trajectory.json",
+      "quality": {
+        "native_success": true,
+        "valid_grasp": false,
+        "training_ready": false,
+        "reason": "No hand-object contact at any step; basket lifted by knee/hip collision",
+        "max_hand_object_N": 0,
+        "source": "measured contacts.json; original native acceptance unchanged"
+      },
+      "videos": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/videos/no_reference/G1WholebodyGroundBasketPickTeleop"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "files": {
+    "model": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/scene.mjb",
+    "trajectory": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/execution/trajectory.npz",
+    "result": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/result.json",
+    "spec": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_2022_four_task_positions/button_00_spec.json",
+    "contact_contract": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/contact_contract.json",
+    "acceptance": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/execution/benchmark_button_acceptance.json"
+  },
+  "bindings": {
+    "object": "button002_base",
+    "root_body": "pelvis",
+    "feet": [
+      "left_ankle_roll_link",
+      "right_ankle_roll_link"
+    ],
+    "ground_geoms": [
+      "ground"
+    ],
+    "support_geoms": [
+      "table_geom"
+    ],
+    "frame": {
+      "kind": "world_heading",
+      "yaw_rad": 0.0,
+      "evidence": "Archived fixed scene world X; new scene must explicitly supply surface heading"
+    },
+    "operation_bodies": [
+      "right_wrist_yaw_link"
+    ],
+    "contact_policy": []
+  },
+  "entry_index": 872,
+  "end_index": 1783,
+  "state_key": "state",
+  "support_distance_m": 0.002,
+  "success_field": "revised_success",
+  "success_criterion": "button_palm_mesh_v1",
+  "notes": "Real frozen record reference, not a synthetic fixture. Empty contact exemptions intentionally cannot certify full contact operation."
+}

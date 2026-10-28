@@ -1,0 +1,15 @@
+{
+  "reviewed_unix_s": 1791867803.139933,
+  "scope": "All10 attempts: sampled middle/final first-person and third-person frames, plus initial/close-up samples of attempts1/2. Full video decode performed by renderer.",
+  "video_pairs": 10,
+  "findings": [
+    "Apple remains supported on table; no successful pickup visible, agrees with zero hand/apple force in all physical records.",
+    "Attempts2/3/4/5/6/8 approach desk and trigger measured collision stops; final pose/frame is retained.",
+    "Attempts8/9 show large stance drift; do not smooth it out or label as render noise.",
+    "Native white assets and reflective checkerboard floor are approximate; no calibrated photorealism claimed."
+  ],
+  "temporal_review_status": "not_continuously_reviewed",
+  "accepted": false,
+  "training_ready": false,
+  "corrections": []
+}

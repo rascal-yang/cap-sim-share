@@ -1,0 +1,24 @@
+{
+  "walk_speed": 0.22,
+  "walk_duration": 1.5,
+  "walk_feedback_limit": 1,
+  "stance_offset": [
+    -0.1,
+    0,
+    0
+  ],
+  "constant_walk": true,
+  "brake": false,
+  "height": 0.78,
+  "arm_velocity": [
+    -0.22,
+    0
+  ],
+  "offset": [
+    0,
+    0,
+    0.02
+  ],
+  "correction_gain": 0.4,
+  "diagnosis": "Fullbody static stance7 pulled robot backward. Retain planner/teleop and oppose measured forward reach drift with bounded reverse velocity during arm movement."
+}

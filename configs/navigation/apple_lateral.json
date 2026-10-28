@@ -1,0 +1,78 @@
+{
+  "extraction": {
+    "window_s": 0.2,
+    "lookback_s": 2.0,
+    "foot_drift_m": 0.002,
+    "foot_angle_rad": 0.02,
+    "max_windows": 3,
+    "open_fingers_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "finger_tolerance_rad": 1e-06
+  },
+  "ik": {
+    "max_nfev": 60,
+    "key_stride": 4,
+    "position_m": 0.003,
+    "angle_rad": 0.03,
+    "foot_position_m": 0.002,
+    "foot_angle_rad": 0.02,
+    "joint_speed_rad_s": 6.0,
+    "root_speed_m_s": 0.3,
+    "timeout_s": 15.0,
+    "posture_weight": 0.002,
+    "bridge_duration_s": 4.0,
+    "bridge_samples": 41,
+    "measured_hand_limit_tolerance_rad": 0.0033,
+    "minimum_position_margin_m": 0.0,
+    "reuse_source_first": true,
+    "max_body_joint_correction_rad": 0.15,
+    "max_root_correction_m": 0.02,
+    "max_root_correction_rad": 0.05
+  },
+  "native": {
+    "path": {
+      "resolution": 0.04,
+      "padding": 0.6,
+      "max_expansions": 5000
+    },
+    "collision_tolerance_m": 0.001,
+    "support_distance_m": 0.005,
+    "corridor_margin_m": 0.025,
+    "sample_translation_m": 0.02,
+    "sample_angle_rad": 0.04,
+    "max_checks": 100000,
+    "planning_timeout_s": 30.0,
+    "relation_tolerance_m": 0.003,
+    "relation_tolerance_rad": 0.03
+  },
+  "search": {
+    "step_m": 0.025,
+    "max_candidates": 3,
+    "planning_timeout_s": 60.0,
+    "mode": "replay_first"
+  },
+  "handoff_timeout_s": 25.0,
+  "configuration_basis": {
+    "geometry": "Source 20261027_0015 geometric contact bands; explicit existing phase policy, not all contacts automatically exempt",
+    "ik": "3mm target residual from previous apple replan; 0.03rad orientation and 2mm foot tolerance are declared planning thresholds, not measured capability",
+    "speed": "6rad/s joint and 0.3m/s root planning limits; physical tracking not verified",
+    "budgets": "Bounded developer configuration, no automatic extension",
+    "source_control": "346 original token steps then mode1 preencoder identity-body-PD; new path zero original token steps",
+    "joint_limits": "All controlled body joint references: 1e-7 numerical tolerance. Commanded finger limits: 1e-7. Measured finger articulation used only for collision prediction permits 0.0033rad soft-joint deviation, covering source observed max 0.003216528rad; this is not extra command range.",
+    "small_changes": "Developer bounds, not calibrated robot capability: preserve translated replay exactly when feasible; otherwise at most0.15rad body joint,0.02m root translation,0.05rad root rotation correction."
+  }
+}

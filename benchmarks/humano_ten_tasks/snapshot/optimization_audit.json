@@ -1,0 +1,104 @@
+[
+  {
+    "group": "no_reference",
+    "task": "G1WholebodyBallKickTeleop",
+    "first_success_attempt": 1,
+    "selected_attempt": 1,
+    "first_metrics": {
+      "roughness": 18.41078795565718,
+      "root_omega_rms": 0.3536421126810506,
+      "peak_table_force": 0.0
+    },
+    "selected_metrics": {
+      "roughness": 18.41078795565718,
+      "root_omega_rms": 0.3536421126810506,
+      "peak_table_force": 0.0
+    },
+    "baseline_preserved": true
+  },
+  {
+    "group": "no_reference",
+    "task": "G1WholebodyChairPushTeleop",
+    "first_success_attempt": 2,
+    "selected_attempt": 2,
+    "first_metrics": {
+      "roughness": 19.694762537030986,
+      "root_omega_rms": 0.35734659008252506,
+      "peak_table_force": 0.0
+    },
+    "selected_metrics": {
+      "roughness": 19.694762537030986,
+      "root_omega_rms": 0.35734659008252506,
+      "peak_table_force": 0.0
+    },
+    "baseline_preserved": true
+  },
+  {
+    "group": "no_reference",
+    "task": "G1WholebodyChairSitTeleop",
+    "first_success_attempt": 1,
+    "selected_attempt": 1,
+    "first_metrics": {
+      "roughness": 31.547192318563177,
+      "root_omega_rms": 0.6351809913687452,
+      "peak_table_force": 0.0
+    },
+    "selected_metrics": {
+      "roughness": 31.547192318563177,
+      "root_omega_rms": 0.6351809913687452,
+      "peak_table_force": 0.0
+    },
+    "baseline_preserved": true
+  },
+  {
+    "group": "no_reference",
+    "task": "G1WholebodyDollyPushTeleop",
+    "first_success_attempt": 1,
+    "selected_attempt": 2,
+    "first_metrics": {
+      "roughness": 24.129301218305717,
+      "root_omega_rms": 0.4423670449180941,
+      "peak_table_force": 0.0
+    },
+    "selected_metrics": {
+      "roughness": 20.696911635453638,
+      "root_omega_rms": 0.36172236675801545,
+      "peak_table_force": 0.0
+    },
+    "baseline_preserved": true
+  },
+  {
+    "group": "no_reference",
+    "task": "G1WholebodyGroundBasketPickTeleop",
+    "first_success_attempt": 1,
+    "selected_attempt": 1,
+    "first_metrics": {
+      "roughness": 14.441310066715014,
+      "root_omega_rms": 0.17713366040569659,
+      "peak_table_force": 0.0
+    },
+    "selected_metrics": {
+      "roughness": 14.441310066715014,
+      "root_omega_rms": 0.17713366040569659,
+      "peak_table_force": 0.0
+    },
+    "baseline_preserved": true
+  },
+  {
+    "group": "reference_augmented",
+    "task": "G1WholebodyBallKickTeleop",
+    "first_success_attempt": 2,
+    "selected_attempt": 2,
+    "first_metrics": {
+      "roughness": 15.075548125253391,
+      "root_omega_rms": 0.5543564019991313,
+      "peak_table_force": 0.0
+    },
+    "selected_metrics": {
+      "roughness": 15.075548125253391,
+      "root_omega_rms": 0.5543564019991313,
+      "peak_table_force": 0.0
+    },
+    "baseline_preserved": true
+  }
+]

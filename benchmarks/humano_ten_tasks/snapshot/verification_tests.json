@@ -1,0 +1,15 @@
+{
+  "unix_s": 1791854983.1197882,
+  "core_tests": {
+    "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 /home/kinetra-4090-01/miniconda3/envs/sonic/bin/python -m pytest -q cap-sim/tests",
+    "passed": 32,
+    "wall_s_reported_by_pytest": 0.7
+  },
+  "policy_checks": [
+    "synthetic no-contact lift gate",
+    "opposite-hand table contact cannot open bilateral target-contact gate",
+    "failure-driven existing-interface switch retains contact gate and velocity bounds",
+    "post-reference 3.5cm correction requires actual target contacts"
+  ],
+  "external_model_api_calls": 0
+}

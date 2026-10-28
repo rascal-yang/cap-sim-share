@@ -1,0 +1,10 @@
+{
+  "protocol": "responses",
+  "base_url": "https://api.openai.com/v1",
+  "model": "REPLACE_WITH_YOUR_MODEL",
+  "key_env": "AUGMENTATION_API_KEY",
+  "timeout_s": 90,
+  "max_rounds": 8,
+  "max_output_tokens": 2048,
+  "wall_s": 900
+}

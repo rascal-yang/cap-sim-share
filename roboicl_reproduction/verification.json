@@ -1,0 +1,44 @@
+{
+  "verified_at": "2026-10-15T10:37:14+08:00",
+  "scope": "code_and_synthetic_protocol_only",
+  "physics_launched": false,
+  "api_called": false,
+  "tests": {
+    "combined_passed": 104,
+    "skipped": 1,
+    "subtests_passed": 30,
+    "upstream_reference_setting_passed": 2,
+    "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 /home/kinetra-4090-01/HUMANO/.venv/bin/python -m pytest -q cap-sim/tests cap-sim/roboicl_adapter/test_adapter.py cap-sim/roboicl_reproduction/tests",
+    "skip_reason": "existing HUMANO environment lacks h5py; upstream XPolicyLab submodule also uninitialized"
+  },
+  "upstream_inventory_count": 100,
+  "available_upstream_files": 96,
+  "original_files_checked": 1004,
+  "original_files_changed": [],
+  "vendor_mismatches": [],
+  "review_fixes": [
+    "TRAIN state/camera whitelist",
+    "Known execution prefix retained after unknown execution error",
+    "TRAIN recorded observation timestamps cross-checked against elapsed duration",
+    "Reject boolean control modes"
+  ],
+  "limitations": [
+    "No original RoboDojo simulation/IK integration test",
+    "No authenticated same-profile successful HUMANO TRAIN recording yet",
+    "No physical execution adapter admitted or tested",
+    "No grasp or braking success claim"
+  ],
+  "code_sha256": {
+    "repro/__init__.py": "73f6462820153afb3d5b9ce1f4421f034978aef73842f84dd200f9516520e53a",
+    "repro/session.py": "fc7a7d5cb07d3dc0ae94614fda831f7f19f75cee6482cac6b6e93f2a845eb9d1",
+    "repro/offline.py": "d077b63f12d642512c538ea15ee4caf49e9d59c447bbe071179f1014241713cb",
+    "repro/humano.py": "3472c3500730b250343180adab9c2637c553b81e03cdb23f1010a7cfb1252a99",
+    "repro/train.py": "f06434af2f873eb9fd63e576ea3b61e0d013abffe7a2479de3b51da3248fcac0",
+    "tests/test_session.py": "f2b7a5062351c916e9d18307a3386f7141985a4e447b47020ddd34af41405be6",
+    "tests/conftest.py": "9b0311e1fc33204705342bf772508388db2a1f9c78defc15508b28e9b45b12d7",
+    "tests/test_memory_train.py": "6db45a28d8f4537222d8e207f6248ae8fbf48bfbef6192b2bdf4eb71ed16600c",
+    "tests/test_train.py": "b0162f85f060bd659fdaee1128b5c2b652e0b7d834277c526fa4cf91bac513e0",
+    "tests/test_original.py": "ea133e0c8c19d88fa966d8e2be8d3c80e9ed01f6367a2490f8205653bc7bc5cf",
+    "tests/test_humano.py": "fefa53e87c67b9835ca1e70de1c8c368b50775608c4d63979aa7cec8d230df2d"
+  }
+}

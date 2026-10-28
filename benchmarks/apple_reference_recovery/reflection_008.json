@@ -1,0 +1,5 @@
+{
+  "attempt": 8,
+  "observed": "Constant reverse motion moved root behind-1.3m and caused lateral drift; final table collision. No hand contact.",
+  "next_change": "Eliminate fixed reverse command and extra walking; short contact stage with measured root feedback and fixed facing."
+}

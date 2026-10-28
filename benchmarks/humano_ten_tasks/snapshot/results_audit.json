@@ -1,0 +1,986 @@
+{
+  "generated_unix_s": 1791856917.1890686,
+  "cases": [
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyBallKickTeleop",
+      "native_success": true,
+      "valid_task_success": true,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 2,
+      "selected_attempt": 1,
+      "selected_sim_s": 4.999999999999916,
+      "sim_s_executed": 10.159999999999828,
+      "interrupted_attempts": [],
+      "failures": [],
+      "recorded_attempt_wall_s": 83.81261801719666,
+      "initial_planning_wall_s": 52.672104597091675,
+      "mailbox_decision_wall_s": 70.29224157333374,
+      "video_verified": true
+    },
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyChairPushTeleop",
+      "native_success": true,
+      "valid_task_success": true,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 3,
+      "selected_attempt": 2,
+      "selected_sim_s": 9.800000000000132,
+      "sim_s_executed": 55.79999999999955,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 476.304071187973,
+      "initial_planning_wall_s": 142.8018934726715,
+      "mailbox_decision_wall_s": 412.7581260204315,
+      "video_verified": true
+    },
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyChairSitTeleop",
+      "native_success": true,
+      "valid_task_success": true,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 2,
+      "selected_attempt": 1,
+      "selected_sim_s": 17.200000000000863,
+      "sim_s_executed": 35.160000000001574,
+      "interrupted_attempts": [],
+      "failures": [],
+      "recorded_attempt_wall_s": 527.4554319381714,
+      "initial_planning_wall_s": 192.47153306007385,
+      "mailbox_decision_wall_s": 487.4552435874939,
+      "video_verified": true
+    },
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyDollyPushTeleop",
+      "native_success": true,
+      "valid_task_success": true,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 2,
+      "selected_attempt": 2,
+      "selected_sim_s": 11.420000000000385,
+      "sim_s_executed": 25.14000000000113,
+      "interrupted_attempts": [],
+      "failures": [],
+      "recorded_attempt_wall_s": 278.66163325309753,
+      "initial_planning_wall_s": 127.7719075679779,
+      "mailbox_decision_wall_s": 243.32200622558594,
+      "video_verified": true
+    },
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyGroundBasketPickTeleop",
+      "native_success": true,
+      "valid_task_success": false,
+      "quality": {
+        "native_success": true,
+        "valid_grasp": false,
+        "training_ready": false,
+        "reason": "No hand-object contact at any step; basket lifted by knee/hip collision",
+        "max_hand_object_N": 0,
+        "source": "measured contacts.json; original native acceptance unchanged"
+      },
+      "quality_pending": false,
+      "attempts": 2,
+      "selected_attempt": 1,
+      "selected_sim_s": 7.699999999999858,
+      "sim_s_executed": 11.699999999999795,
+      "interrupted_attempts": [
+        2
+      ],
+      "failures": [
+        {
+          "attempt": 2,
+          "reason": "infrastructure_timeout_waiting_for_GPT"
+        }
+      ],
+      "recorded_attempt_wall_s": 269.50272965431213,
+      "initial_planning_wall_s": 76.10043168067932,
+      "mailbox_decision_wall_s": 420.95218324661255,
+      "video_verified": true
+    },
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyGroundBottlePickTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 230.14999999998935,
+      "interrupted_attempts": [
+        4
+      ],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 4,
+          "reason": "infrastructure_process_lost"
+        },
+        {
+          "attempt": 5,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 6,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 7,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 8,
+          "reason": "invalid_action: Body reference outside joint limits"
+        },
+        {
+          "attempt": 9,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 10,
+          "reason": "execution_deadline"
+        }
+      ],
+      "recorded_attempt_wall_s": 1001.3920965194702,
+      "initial_planning_wall_s": 143.8963758945465,
+      "mailbox_decision_wall_s": 809.8976411819458,
+      "video_verified": true
+    },
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyGroundBoxPickTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 262.8999999999892,
+      "interrupted_attempts": [
+        1,
+        3
+      ],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "infrastructure_timeout_waiting_for_GPT"
+        },
+        {
+          "attempt": 2,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 3,
+          "reason": "infrastructure_process_lost"
+        },
+        {
+          "attempt": 4,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 5,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 6,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 7,
+          "reason": "invalid_action: Body reference outside joint limits"
+        },
+        {
+          "attempt": 8,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 9,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 10,
+          "reason": "execution_deadline"
+        }
+      ],
+      "recorded_attempt_wall_s": 333.32907271385193,
+      "initial_planning_wall_s": 0.2472996711730957,
+      "mailbox_decision_wall_s": 508.7993755340576,
+      "video_verified": true
+    },
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyTableApplePickTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 178.79499999999408,
+      "interrupted_attempts": [
+        6,
+        8
+      ],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 2,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 3,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 4,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 5,
+          "reason": "contact_lost"
+        },
+        {
+          "attempt": 6,
+          "reason": "infrastructure_timeout_waiting_for_GPT"
+        },
+        {
+          "attempt": 7,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 8,
+          "reason": "infrastructure_process_lost"
+        },
+        {
+          "attempt": 9,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 10,
+          "reason": "execution_deadline"
+        }
+      ],
+      "recorded_attempt_wall_s": 1297.368863582611,
+      "initial_planning_wall_s": 207.69371056556702,
+      "mailbox_decision_wall_s": 1397.8818452358246,
+      "video_verified": true
+    },
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyTableButtonPressTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 148.9700000000043,
+      "interrupted_attempts": [
+        7
+      ],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 4,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 5,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 6,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 7,
+          "reason": "infrastructure_process_lost"
+        },
+        {
+          "attempt": 8,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 9,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 10,
+          "reason": "unexpected_table_contact"
+        }
+      ],
+      "recorded_attempt_wall_s": 1341.3983907699585,
+      "initial_planning_wall_s": 145.23100399971008,
+      "mailbox_decision_wall_s": 1178.4826419353485,
+      "video_verified": true
+    },
+    {
+      "group": "no_reference",
+      "task": "G1WholebodyTablePlatePickTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 277.1499999999867,
+      "interrupted_attempts": [
+        1,
+        3
+      ],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "infrastructure_timeout_waiting_for_GPT"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "infrastructure_process_lost"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 6,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 7,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "execution_deadline"
+        },
+        {
+          "attempt": 10,
+          "reason": "execution_deadline"
+        }
+      ],
+      "recorded_attempt_wall_s": 298.36909008026123,
+      "initial_planning_wall_s": 0.25157642364501953,
+      "mailbox_decision_wall_s": 452.9861960411072,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyBallKickTeleop",
+      "native_success": true,
+      "valid_task_success": true,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 3,
+      "selected_attempt": 2,
+      "selected_sim_s": 4.1599999999999335,
+      "sim_s_executed": 14.539999999999758,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 19.48404026031494,
+      "initial_planning_wall_s": 0.07042407989501953,
+      "mailbox_decision_wall_s": 2.0255351066589355,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyChairPushTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 151.0100000000093,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 6,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 7,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 10,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 331.91138529777527,
+      "initial_planning_wall_s": 0.6141927242279053,
+      "mailbox_decision_wall_s": 173.42624020576477,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyChairSitTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 92.73000000000049,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 6,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 7,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 10,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 179.9892852306366,
+      "initial_planning_wall_s": 0.25153636932373047,
+      "mailbox_decision_wall_s": 78.4749186038971,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyDollyPushTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 149.59000000000927,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 6,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 7,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 10,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 364.6347873210907,
+      "initial_planning_wall_s": 0.48444557189941406,
+      "mailbox_decision_wall_s": 177.0732069015503,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyGroundBasketPickTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 223.89499999999526,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "robot_fall_or_simulation_warning"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 6,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 7,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 10,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 334.1562967300415,
+      "initial_planning_wall_s": 0.5091218948364258,
+      "mailbox_decision_wall_s": 75.55576062202454,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyGroundBottlePickTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 120.31000000000479,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 6,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 7,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 10,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 253.470627784729,
+      "initial_planning_wall_s": 0.275909423828125,
+      "mailbox_decision_wall_s": 99.97485661506653,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyGroundBoxPickTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 238.24999999999542,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 6,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 7,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 10,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 357.70615315437317,
+      "initial_planning_wall_s": 0.4557473659515381,
+      "mailbox_decision_wall_s": 90.12721252441406,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyTableApplePickTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 234.0099999999963,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 6,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 7,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 10,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 307.48171496391296,
+      "initial_planning_wall_s": 0.17671990394592285,
+      "mailbox_decision_wall_s": 54.539324045181274,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyTableButtonPressTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 111.40000000000396,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "unexpected_table_contact"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 6,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 7,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 10,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 263.97676253318787,
+      "initial_planning_wall_s": 0.2561638355255127,
+      "mailbox_decision_wall_s": 139.02808904647827,
+      "video_verified": true
+    },
+    {
+      "group": "reference_augmented",
+      "task": "G1WholebodyTablePlatePickTeleop",
+      "native_success": false,
+      "valid_task_success": false,
+      "quality": null,
+      "quality_pending": false,
+      "attempts": 10,
+      "selected_attempt": null,
+      "selected_sim_s": null,
+      "sim_s_executed": 231.49999999999676,
+      "interrupted_attempts": [],
+      "failures": [
+        {
+          "attempt": 1,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 2,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 3,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 4,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 5,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 6,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 7,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 8,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 9,
+          "reason": "task_not_completed"
+        },
+        {
+          "attempt": 10,
+          "reason": "task_not_completed"
+        }
+      ],
+      "recorded_attempt_wall_s": 366.1179838180542,
+      "initial_planning_wall_s": 0.2287757396697998,
+      "mailbox_decision_wall_s": 105.05029082298279,
+      "video_verified": true
+    }
+  ],
+  "notes": [
+    "No-reference input excludes expert rollouts; source initial state is allowed.",
+    "Wall time includes mailbox waiting; interrupted attempt wall duration is not reconstructed.",
+    "Native pick height checks alone do not establish a valid grasp.",
+    "Automatic policy decisions are GPT-authored code, not live API calls."
+  ]
+}

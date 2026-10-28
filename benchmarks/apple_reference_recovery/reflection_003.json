@@ -1,0 +1,40 @@
+{
+  "attempt": 3,
+  "observed": "Low speed .12m/s failed to move during5s walking. Reaching distant wrist target then moved root from-.906 to-.661 and triggered table contact on next segment.",
+  "failure": "unexpected_table_contact",
+  "contact_events": [
+    {
+      "bodies": [
+        "table",
+        "right_hand_middle_1_link"
+      ],
+      "geoms": [
+        "table_geom",
+        ""
+      ],
+      "force_N": 9.60434666581702,
+      "position": [
+        -0.18501735188053697,
+        -0.1052234402056315,
+        0.6497271012111789
+      ]
+    },
+    {
+      "bodies": [
+        "table",
+        "apple_001"
+      ],
+      "geoms": [
+        "table_geom",
+        "apple_001_convex_0"
+      ],
+      "force_N": 0.9081532231376904,
+      "position": [
+        -0.2705309111007761,
+        -0.04681834874165825,
+        0.6496632075547002
+      ]
+    }
+  ],
+  "next_change": "Constant.22m/s short walking segments and early braking; raise approach wrist2cm."
+}

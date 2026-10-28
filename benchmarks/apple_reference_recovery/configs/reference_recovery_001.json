@@ -1,0 +1,5 @@
+{
+  "mode": "body",
+  "rate": 1.0,
+  "diagnosis": "Old reference run used episode 1 and stopped fingers with reference time. Use episode 0 matched reset, full future body preview and commanded fingers; no artificial lateral step in original scene."
+}

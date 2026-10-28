@@ -1,0 +1,37 @@
+{
+  "name": "g1_apple_skill_only",
+  "backend": "humano",
+  "instruction": "A task where the G1 robot must move forward to pick up an apple on the table.",
+  "resources": {
+    "prepared": "FILL_PREPARED_ASSET_DIRECTORY",
+    "initial_state": "FILL_ENV_INITIAL_STATE_NPZ",
+    "sonic_models": "FILL_SONIC_1_0_MODEL_DIRECTORY"
+  },
+  "scene": {
+    "translation": [
+      0,
+      0,
+      0
+    ]
+  },
+  "acceptance": {
+    "kind": "native",
+    "hold_s": 0.005,
+    "validator_id": "83808ce426f33c4f4106ede59ff0202d461a8e389d0bd68e24047f04a6c5796a"
+  },
+  "budget": {
+    "attempts": 10,
+    "sim_seconds": 30,
+    "optimization_attempts": 0,
+    "feedback_calls": 17
+  },
+  "references": [],
+  "skills": [],
+  "generation_kind": "skill_only",
+  "planner_identity": "Explicit GPT/API model required; no deterministic reference-local planner",
+  "code_version": "Preparation template, not an executed experiment",
+  "policy_checks": {
+    "require_reflection": true,
+    "sonic_mode": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "verified_unix_s": 1791856854.374324,
+  "completed_cases": 20,
+  "video_pairs": 20,
+  "no_reference_frozen_hashes_unchanged": true,
+  "controller_physics_acceptance_resources_equal_between_groups_except_shifted_compiled_model": true,
+  "all_full_attempt_independent_checks_match": true,
+  "successful_baselines_preserved": true,
+  "video_end_times_match_measured_states": true,
+  "reference_policy_sources": {
+    "8ec218fa14c97389d5ce00ccd59327c4c2f4e0280594ecf0eee090702d467ac7": "policy_versions/reference_v2_target_contacts.py",
+    "ae047d469c6914e351aa227a7eb53cce5d96c8b6b16ed18f59a938f388aaf808": "policy_versions/reference_v0_ball.py",
+    "ba317e8c24b964d12e5d99007b37aa8e18ad23ba88bfd6d0820921ef15a0807d": "policy_versions/reference_v1.py",
+    "5657afc27d8bb95a6732225b7233243584a2e6dfca735b0416658a1fe1e2feac": "reference_policy.py",
+    "b94eaf55db78ef92fb1f72faf8511c080ccefdbfea0570d8a2a193853ff68de3": "policy_versions/reference_v3_cartesian_retry.py"
+  }
+}

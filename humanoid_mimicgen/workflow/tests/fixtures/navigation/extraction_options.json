@@ -1,0 +1,7 @@
+{
+  "window_s": 0.2,
+  "lookback_s": 2.0,
+  "speed_m_s": 0.08,
+  "yaw_speed_rad_s": 0.2,
+  "drift_m": 0.02
+}

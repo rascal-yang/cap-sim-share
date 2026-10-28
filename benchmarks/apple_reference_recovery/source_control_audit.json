@@ -1,0 +1,14 @@
+{
+  "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyTableApplePickTeleop/sonic/episode_000000.npz",
+  "sha256": "56c0f39143ff9ea243d994897cfc70f363da784f43dd93df3af2f637a1d39ba3",
+  "encoder_obs_shape": [
+    444,
+    1762
+  ],
+  "encoder_obs_all_nan": true,
+  "control_phases": [
+    "SONIC default motors",
+    "recorded tokens / SONIC motors"
+  ],
+  "limitation": "Missing original encoder reference; recorded token execution is not reproduced by encoding measured joint poses."
+}

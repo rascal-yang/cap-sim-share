@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "request_id": "apple-augmentation-example-001",
+  "baseline_request": "../../../../experiments/20261020_1710_workflow_parking_final/baseline/request.json",
+  "conditions": {
+    "mode": "explicit",
+    "cases": [
+      {"case_id": "baseline", "robot_delta_xyyaw": [0, 0, 0], "object_delta_xy": [0, 0]},
+      {"case_id": "back20", "robot_delta_xyyaw": [-0.2, 0, 0], "object_delta_xy": [0, 0]}
+    ]
+  },
+  "budgets": {"max_cases": 2, "wall_s": 600},
+  "output_root": "../../../../augmentation-output",
+  "render": false,
+  "export": true,
+  "stance_hint_frame": "object_relative"
+}

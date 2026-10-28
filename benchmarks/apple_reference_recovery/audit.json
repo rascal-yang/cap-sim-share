@@ -1,0 +1,203 @@
+{
+  "status": "reference_recovery_failed",
+  "recovery_attempts": 10,
+  "recovery_successes": 0,
+  "generation_attempts": 0,
+  "generation_status": "blocked_by_reference_recovery",
+  "optimization_attempts": 0,
+  "calendar_wall_s_at_audit": 658.1053898334503,
+  "recorded_attempt_wall_s": 495.97405219078064,
+  "sim_seconds": 102.86500000000204,
+  "source_episode": 0,
+  "live_model_api": false,
+  "video_pairs": 10,
+  "all_independent_validations_match": true,
+  "frozen_resource_files_unchanged": true,
+  "cases": [
+    {
+      "attempt": 1,
+      "failure": "task_not_completed",
+      "sim_s": 19.600000000000385,
+      "wall_s_including_decision_wait": 20.144416332244873,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 0.0,
+      "table_links": [],
+      "final_root_xyz": [
+        -0.8784450510265626,
+        0.023880958864217375,
+        0.7800182071154019
+      ],
+      "max_apple_lift_m": 0.00018119286755469144,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_001/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_001/external.mp4"
+    },
+    {
+      "attempt": 2,
+      "failure": "unexpected_table_contact",
+      "sim_s": 3.569999999999946,
+      "wall_s_including_decision_wait": 5.422178745269775,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 314.9228862918452,
+      "table_links": [
+        "left_hip_roll_link",
+        "left_hip_yaw_link"
+      ],
+      "final_root_xyz": [
+        -0.46125227826472026,
+        -0.025857269233328244,
+        0.7732640940705404
+      ],
+      "max_apple_lift_m": 0.00017600829769648385,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_002/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_002/external.mp4"
+    },
+    {
+      "attempt": 3,
+      "failure": "unexpected_table_contact",
+      "sim_s": 8.05499999999986,
+      "wall_s_including_decision_wait": 51.432658672332764,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 14.400149455719609,
+      "table_links": [
+        "right_hand_middle_1_link"
+      ],
+      "final_root_xyz": [
+        -0.649506938458757,
+        0.031933406356096775,
+        0.7690884050940814
+      ],
+      "max_apple_lift_m": 0.0001905116879780122,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_003/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_003/external.mp4"
+    },
+    {
+      "attempt": 4,
+      "failure": "unexpected_table_contact",
+      "sim_s": 6.409999999999886,
+      "wall_s_including_decision_wait": 35.00755500793457,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 172.24505543405274,
+      "table_links": [
+        "left_hip_yaw_link"
+      ],
+      "final_root_xyz": [
+        -0.4871015003370852,
+        -0.028773522513484043,
+        0.7719835379663441
+      ],
+      "max_apple_lift_m": 0.00018587647482093406,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_004/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_004/external.mp4"
+    },
+    {
+      "attempt": 5,
+      "failure": "unexpected_table_contact",
+      "sim_s": 2.774999999999963,
+      "wall_s_including_decision_wait": 46.578062534332275,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 231.1531671667655,
+      "table_links": [
+        "right_hip_yaw_link"
+      ],
+      "final_root_xyz": [
+        -0.48754865085967675,
+        0.021586596996438712,
+        0.76287473459681
+      ],
+      "max_apple_lift_m": 0.00018587593626995247,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_005/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_005/external.mp4"
+    },
+    {
+      "attempt": 6,
+      "failure": "unexpected_table_contact",
+      "sim_s": 6.069999999999893,
+      "wall_s_including_decision_wait": 47.7494592666626,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 69.72930806868104,
+      "table_links": [
+        "right_hand_middle_1_link",
+        "right_hip_yaw_link"
+      ],
+      "final_root_xyz": [
+        -0.4594298221511137,
+        -0.0166643264500166,
+        0.7598299601989698
+      ],
+      "max_apple_lift_m": 0.00018556206706177303,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_006/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_006/external.mp4"
+    },
+    {
+      "attempt": 7,
+      "failure": "task_not_completed",
+      "sim_s": 19.100000000000485,
+      "wall_s_including_decision_wait": 78.33386588096619,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 0.0,
+      "table_links": [],
+      "final_root_xyz": [
+        -0.860452041647195,
+        0.00046404809439508056,
+        0.7862899333258528
+      ],
+      "max_apple_lift_m": 0.00018586433718570383,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_007/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_007/external.mp4"
+    },
+    {
+      "attempt": 8,
+      "failure": "unexpected_table_contact",
+      "sim_s": 15.28500000000099,
+      "wall_s_including_decision_wait": 62.570584535598755,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 477.88372031761435,
+      "table_links": [
+        "left_hip_roll_link",
+        "left_hip_yaw_link"
+      ],
+      "final_root_xyz": [
+        -0.51838319357512,
+        0.2570852262865406,
+        0.7648644151025544
+      ],
+      "max_apple_lift_m": 0.00018587660217717072,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_008/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_008/external.mp4"
+    },
+    {
+      "attempt": 9,
+      "failure": "invalid_action: Wrist target outside 1.5 m workspace",
+      "sim_s": 13.50000000000071,
+      "wall_s_including_decision_wait": 55.79665017127991,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 0.0,
+      "table_links": [],
+      "final_root_xyz": [
+        -1.9286336360001661,
+        -0.29976103431605533,
+        0.6986387283024909
+      ],
+      "max_apple_lift_m": 0.0001949158054270761,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_009/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_009/external.mp4"
+    },
+    {
+      "attempt": 10,
+      "failure": "task_not_completed",
+      "sim_s": 8.499999999999929,
+      "wall_s_including_decision_wait": 92.93862104415894,
+      "peak_hand_apple_N": 0.0,
+      "peak_robot_table_N": 0.0,
+      "table_links": [],
+      "final_root_xyz": [
+        -0.8914121056868061,
+        0.09407807983667506,
+        0.7824786115638109
+      ],
+      "max_apple_lift_m": 0.00021508356477994983,
+      "video_ego": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_010/ego.mp4",
+      "video_external": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_recovery/videos/recovery_010/external.mp4"
+    }
+  ]
+}

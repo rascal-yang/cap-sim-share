@@ -1,0 +1,2 @@
+{"phase": "manifest_admission", "train_images": 0, "live_max_images": 18, "max_total_images": 18, "image_limit": 50}
+{"phase": "assembled_prefix", "train_images": 0, "live_max_images": 18, "max_total_images": 18, "image_limit": 50}

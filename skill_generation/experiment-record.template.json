@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_status": "template_not_executable",
+  "experiment_id": null,
+  "timezone": "Asia/Shanghai",
+  "created_at": null,
+  "purpose": {"hypothesis": null, "baseline_paths": [], "planned_changes": [], "invariants": [], "known_confounders": []},
+  "cases": [],
+  "runtime": {
+    "profile": "runtime/humano-cpu.json",
+    "expected": {"tensorrt": "10.13.0.35", "onnxruntime": "1.23.2", "sonic_model_release": "1.0", "inference_provider": "CPUExecutionProvider", "tensorrt_used_for_sonic": false},
+    "actual_loaded_session_evidence": null,
+    "model_hashes": null,
+    "python_version": null,
+    "gear_sonic_package_version": null,
+    "render_device": null
+  },
+  "physics": {
+    "simulator_version": null, "robot_and_hand": null,
+    "asset_and_initial_state_manifest": null, "physics_parameters_manifest": null,
+    "physics_dt_s": null, "control_dt_s": null,
+    "pd_parameters": null, "action_permissions": null,
+    "safety_gates": null, "acceptance_source_and_hash": null, "acceptance_thresholds": null
+  },
+  "control": {
+    "stage_interfaces": [],
+    "stage_entry_required_fields": ["stage", "mode", "lower_body_interface", "upper_body_interface", "action_fields_units_frames", "target_source", "interpolation", "ik_used", "native_prefix_source_and_hash", "handoff_rule"],
+    "fallback_allowed": false, "actual_mode_log": null
+  },
+  "pipeline": {
+    "entrypoint": null, "ordered_steps": [], "source_snapshot_and_hashes": null,
+    "git_commit_and_dirty_patch": null, "skill_versions_and_hashes": [],
+    "planner_identity_and_prompt_hash": null, "external_model_calls": null,
+    "original_actions_visible": null, "feedback_and_reflection_rules": null,
+    "allowed_retry_changes": [], "optimization_enabled": false
+  },
+  "budget": {"attempts_per_case": null, "recovery_attempts": null, "simulation_seconds_per_attempt": null, "feedback_calls": null, "optimization_attempts": 0},
+  "metrics": {"target_definition": null, "sampling_and_alignment": null, "tracking_error_definition": null, "endpoint_error_definition": null, "orientation_error_definition": null, "base_drift_definition": null, "failure_truncation_rule": null},
+  "preflight": {"comparison_diff_path": null, "passed": false, "evidence_paths": []},
+  "execution": {"started_at": null, "ended_at": null, "contract_sha256": null, "audit_path": null, "timing_path": null, "results_path": null}
+}

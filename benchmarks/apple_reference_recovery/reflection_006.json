@@ -1,0 +1,5 @@
+{
+  "attempt": 6,
+  "observed": "Reverse braking removed useful forward displacement; subsequent distant arm target pulled root forward into hip/table14.6N and hand/table5.7N.",
+  "next_change": "Change strategy: restore stable reference leg posture via supported fullbody SONIC channel after approach; offline IK upperbody to measured target."
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+build/
+dist/
+runs/
+.local/
+.env*
+!.env.example
+MUJOCO_LOG.TXT

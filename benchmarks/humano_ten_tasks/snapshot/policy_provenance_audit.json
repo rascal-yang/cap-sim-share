@@ -1,0 +1,31 @@
+{
+  "recorded_reference_decisions": 906,
+  "versions": [
+    {
+      "sha256": "8ec218fa14c97389d5ce00ccd59327c4c2f4e0280594ecf0eee090702d467ac7",
+      "decisions": 50,
+      "archived_source": "policy_versions/reference_v2_target_contacts.py"
+    },
+    {
+      "sha256": "ae047d469c6914e351aa227a7eb53cce5d96c8b6b16ed18f59a938f388aaf808",
+      "decisions": 9,
+      "archived_source": "policy_versions/reference_v0_ball.py"
+    },
+    {
+      "sha256": "ba317e8c24b964d12e5d99007b37aa8e18ad23ba88bfd6d0820921ef15a0807d",
+      "decisions": 74,
+      "archived_source": "policy_versions/reference_v1.py"
+    },
+    {
+      "sha256": "5657afc27d8bb95a6732225b7233243584a2e6dfca735b0416658a1fe1e2feac",
+      "decisions": 447,
+      "archived_source": "reference_policy.py"
+    },
+    {
+      "sha256": "b94eaf55db78ef92fb1f72faf8511c080ccefdbfea0570d8a2a193853ff68de3",
+      "decisions": 326,
+      "archived_source": "policy_versions/reference_v3_cartesian_retry.py"
+    }
+  ],
+  "all_reference_policy_hashes_resolved": true
+}

@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-10-14T19:25:14.529330+08:00",
+  "status": "preparation_only",
+  "physics_steps": 0,
+  "preservation": "Original code kept in place; do not delete/move/overwrite these files",
+  "baseline_kind": "reference trajectory retargeting",
+  "files": [
+    {
+      "path": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_straight_sweep/policy.py",
+      "sha256": "30f340058be1cb4e1b60e2f416c1b40551a179a6d5e47652467fd173815a0794"
+    },
+    {
+      "path": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_straight_sweep/run.py",
+      "sha256": "1e90260665fcf44789e7266723c36398c272f00039be9967ea8af42d890a47a7"
+    },
+    {
+      "path": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_variants/run.py",
+      "sha256": "2aeaec4eb0df41304d40666c5402143e4c0a7eedb66e8564050feb2d62c43a45"
+    },
+    {
+      "path": "/home/kinetra-4090-01/code/zijian/experiments/20261013_apple_ordered_retry/conversion.py",
+      "sha256": "15e0d0beed41a2a3db9566e894ff59da9453254c18e7bad967691df68c7855f6"
+    },
+    {
+      "path": "/home/kinetra-4090-01/code/zijian/experiments/20261014_1558_ik_teleop_comparison/run.py",
+      "sha256": "02ff7a515d5fa1d69674a5454340256213dc09df9cde9bdec5f77d33d5f13a66"
+    },
+    {
+      "path": "/home/kinetra-4090-01/code/zijian/experiments/20261014_1719_stance_margin_pair/run.py",
+      "sha256": "6e1565cfde9195a9940a112f7a7eaf4ab6764d4b8a01de1a159132e20a443a70"
+    }
+  ]
+}

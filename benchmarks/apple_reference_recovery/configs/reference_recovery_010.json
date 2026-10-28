@@ -1,0 +1,4 @@
+{
+  "commanded_body": true,
+  "diagnosis": "Attempts1/7 measured-body references failed locomotion/reach; source motor targets include drive offsets. Test them as reference poses through same encoder/decoder, with original timing and contact gate; no token or torque override."
+}

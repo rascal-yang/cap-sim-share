@@ -1,0 +1,5 @@
+{
+  "walk_speed": 0.22,
+  "correction_gain": 0.6,
+  "diagnosis": "Attempt1 body reference did not move root. Approach measured reference stance using existing leg planner, then separate open-hand approach, commanded closure and gated lift."
+}

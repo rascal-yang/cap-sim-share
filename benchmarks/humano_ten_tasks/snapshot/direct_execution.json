@@ -1,0 +1,27 @@
+[
+  {
+    "task": "G1WholebodyTableApplePickTeleop",
+    "returncode": 0,
+    "wall_s": 75.42321372032166
+  },
+  {
+    "task": "G1WholebodyTableButtonPressTeleop",
+    "returncode": 0,
+    "wall_s": 50.33919358253479
+  },
+  {
+    "task": "G1WholebodyGroundBottlePickTeleop",
+    "returncode": 0,
+    "wall_s": 198.25199484825134
+  },
+  {
+    "task": "G1WholebodyGroundBoxPickTeleop",
+    "returncode": 0,
+    "wall_s": 277.7060751914978
+  },
+  {
+    "task": "G1WholebodyTablePlatePickTeleop",
+    "returncode": 0,
+    "wall_s": 249.9493637084961
+  }
+]

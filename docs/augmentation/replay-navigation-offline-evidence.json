@@ -1,0 +1,139 @@
+{
+  "checked_at": "2026-10-26T22:07:56.543903+08:00",
+  "scope": "offline extraction; no navigation physics or full task success test",
+  "results": [
+    {
+      "task": "apple",
+      "status": "completed",
+      "success_criterion": "native",
+      "analysis_wall_s": 1.5606744328979403,
+      "physics_steps": 0,
+      "evidence_sha256": {
+        "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/apple.json": "7fbc3ff394ca441964c2d64dbd8898f28acb266a1c22707a7b556c14a778bfa8",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/scene.mjb": "2fa01c081c55de219ea94e66e13b9cb386bab693341bcf95b58f3efd836d5ec6",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/execution/trajectory.npz": "fe09d1240d1b280c4f19f2861f0ddf851f625b71a2f85a37898bb4fb65333ea0",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/result.json": "def4f8ed2b7e4d042cfdd122e02c36d947b9be7821de704ad910f37aaec3d41a",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_2022_four_task_positions/apple_00_spec.json": "d01f5580a00feb6f5912cf9a7298a5b7a62c10710c63e102dffeb51006180caa",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/contact_contract.json": "20ae5b05b940422c01dea65d762104813cd4bcf68aa1fca5ff1e664b3b4eb74c",
+        "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/extraction_options.json": "51bdc57929df01d4c35397745defa7621057d0b834ef0b6eeacf41e2fe9b0d4f"
+      },
+      "source_manifest": "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/apple.json",
+      "stable_window": {
+        "indices": [
+          1344,
+          1384
+        ],
+        "time_s": [
+          8.724999999999964,
+          8.924999999999995
+        ],
+        "max_xy_deviation_m": 0.00402678161040898
+      },
+      "source_stance": [
+        -0.5494955492475285,
+        0.012925271861830368,
+        -0.1004853130136234
+      ],
+      "new_stance_for_x_plus_2cm": [
+        -0.5294955492475285,
+        0.012925271861830373,
+        -0.1004853130136234
+      ]
+    },
+    {
+      "task": "plate",
+      "status": "unsupported_entry_pattern",
+      "success_criterion": "native",
+      "analysis_wall_s": 0.8162915359716862,
+      "physics_steps": 0,
+      "evidence_sha256": {
+        "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/plate.json": "e1329231fdbaa48bdb4d8fc66b91e287ac3070ebd9f3cb659d42074cbccdeeda",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_0057_api_contact_strategy_other_tasks/G1WholebodyTablePlatePickTeleop/attempt_00/experiments/20261025_0107_tableplatepick_token_prefix_mode1/scene.mjb": "1bd514b810c9cd7b2fcd129f76a15f7329bcb915969401f93b75d86708c2d797",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_0057_api_contact_strategy_other_tasks/G1WholebodyTablePlatePickTeleop/attempt_00/experiments/20261025_0107_tableplatepick_token_prefix_mode1/execution/trajectory.npz": "7b6cb88385296295e75e96a02fd0607c0442bd34597bcbbaaa8a1fee5f7561d6",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_0057_api_contact_strategy_other_tasks/G1WholebodyTablePlatePickTeleop/attempt_00/experiments/20261025_0107_tableplatepick_token_prefix_mode1/result.json": "2d7f7e08e35c93ec3eca1934519323b93ca0067fe3b800c4b660839a4fd55523",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_2022_four_task_positions/plate_00_spec.json": "f5b54828a28bdc43d8b7237a2ff5105adad5798b854907e7824aac820b414cda",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_0057_api_contact_strategy_other_tasks/G1WholebodyTablePlatePickTeleop/attempt_00/experiments/20261025_0107_tableplatepick_token_prefix_mode1/contact_contract.json": "4d338febd36a78391bbd0e402f89769fd3cb8f4b2b707f258b410908e62148b7",
+        "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/extraction_options.json": "51bdc57929df01d4c35397745defa7621057d0b834ef0b6eeacf41e2fe9b0d4f"
+      },
+      "source_manifest": "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/plate.json",
+      "reason": "No recent stable supported pre-entry window"
+    },
+    {
+      "task": "button",
+      "status": "completed",
+      "success_criterion": "button_palm_mesh_v1",
+      "analysis_wall_s": 0.7013321400154382,
+      "physics_steps": 0,
+      "evidence_sha256": {
+        "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/button.json": "d040ed428862ca1ac4fbe1619dd09fa3888fd78f3eacb3ce477879f19223b599",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/scene.mjb": "d98ce7f2c234b6da5891ed7e20f3ec2f153dd30b9dc7a089d0b6fadb1bb78c24",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/execution/trajectory.npz": "e478ac2b1b676e602507de5d7e097967d8b5a75a3e4d3fb1a7236c3050e0c7ce",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/result.json": "f3700ee8e76a6fd6de2ebcb6260e37031934efa8e7067f4fcfb672bb53f17922",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_2022_four_task_positions/button_00_spec.json": "cc8269aa6a237aa5b4daacf7d1320bcc42af9262dba6047d02cb84138570bdf3",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/contact_contract.json": "3cd631b13d10a57b2139206e0c1bfc51cc2cd4691550bf07f53c720973730fc3",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/button/verify_full/experiments/20261025_1656_tablebuttonpress_token_prefix_mode1/execution/benchmark_button_acceptance.json": "f0d4658a1bc33d2e17bfb75da1dee2ecbdb87b2c32067dc10b0707f0ed24ad80",
+        "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/extraction_options.json": "51bdc57929df01d4c35397745defa7621057d0b834ef0b6eeacf41e2fe9b0d4f"
+      },
+      "source_manifest": "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/button.json",
+      "stable_window": {
+        "indices": [
+          831,
+          872
+        ],
+        "time_s": [
+          6.159999999999891,
+          6.3649999999998865
+        ],
+        "max_xy_deviation_m": 0.0018377609888375218
+      },
+      "source_stance": [
+        -0.5257631764363013,
+        0.007518382919212945,
+        -0.2879539320171888
+      ],
+      "new_stance_for_x_plus_2cm": [
+        -0.5057631764363013,
+        0.007518382919212946,
+        -0.28795393201718866
+      ]
+    },
+    {
+      "task": "chair",
+      "status": "completed",
+      "success_criterion": "native",
+      "analysis_wall_s": 0.8053756079170853,
+      "physics_steps": 0,
+      "evidence_sha256": {
+        "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/chair.json": "1096c9457114b42e85081fcf9efcce58a34a3730afeb2a28428093dd6a6ae0e5",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/chair/verify_full/experiments/20261025_1644_chairsit_token_prefix_mode1/scene.mjb": "0b1459267befa969d999b64d36d830df05d7d1b806bc237e13db1250b0d359f4",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/chair/verify_full/experiments/20261025_1644_chairsit_token_prefix_mode1/execution/trajectory.npz": "24c5546c4e134dbd28e60ca43445043ed0cc6b71113fe90c56879ee408847537",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/chair/verify_full/experiments/20261025_1644_chairsit_token_prefix_mode1/result.json": "88061d27352726e5cd9f13749810cb6d40fe2731d6f0f8738f5e2e4354465ba6",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_2022_four_task_positions/chair_00_spec.json": "3407b65c86f2ebe18cbd8d073e129aed1c3bab9bfb2e105ad202b6fc63f722a7",
+        "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1634_rollback_equal_budget/chair/verify_full/experiments/20261025_1644_chairsit_token_prefix_mode1/contact_contract.json": "6c8f3e2c98fd142a7237cc6286edfe382a123c8609185fcddc2c94db16fe8ff7",
+        "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/extraction_options.json": "51bdc57929df01d4c35397745defa7621057d0b834ef0b6eeacf41e2fe9b0d4f"
+      },
+      "source_manifest": "/home/kinetra-4090-01/code/zijian/cap-sim-api-augmentation/humanoid_mimicgen/workflow/tests/fixtures/navigation/chair.json",
+      "stable_window": {
+        "indices": [
+          1354,
+          1394
+        ],
+        "time_s": [
+          8.774999999999972,
+          8.975000000000003
+        ],
+        "max_xy_deviation_m": 0.0038179234068719987
+      },
+      "source_stance": [
+        -0.4860580038366757,
+        0.01147653086503055,
+        -3.0533069497359677
+      ],
+      "new_stance_for_x_plus_2cm": [
+        -0.46605800383667567,
+        0.01147653086503055,
+        -3.0533069497359677
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "attempt": 2,
+  "failure": "unexpected_table_contact",
+  "observed": "Root reached x=-.518 at3s but drifted to-.461 on handoff; left hip hit table120.7N. Not a hand-contact failure.",
+  "next_change": "Stop stance10cm farther back; lower walking speed and shorter steps; insert measured braking before arm descent."
+}

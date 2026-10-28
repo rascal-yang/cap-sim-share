@@ -1,0 +1,14 @@
+{
+  "name": "g1_apple_lift",
+  "backend": "g1_sonic",
+  "resources": {
+    "experiment": "/path/to/20261013_apple_retry_v5",
+    "sonic_models": "/path/to/GR00T-WholeBodyControl/gear_sonic_deploy",
+    "python": "/path/to/simulator/python",
+    "python_paths": ["/path/to/onnxruntime/site-packages"]
+  },
+  "scene": {"translation": [0, 0.1, 0], "table_delta": 0.1, "scale": 1.1},
+  "acceptance": {"lift_m": 0.1, "hold_s": 1.0},
+  "budget": {"attempts": 10, "sim_seconds": 30, "optimization_attempts": 2},
+  "references": []
+}

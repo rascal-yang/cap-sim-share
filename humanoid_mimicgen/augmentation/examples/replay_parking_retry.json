@@ -1,0 +1,27 @@
+{
+  "route_limits": {"speed_m_s": 0.5, "stop_radius_m": 0.025},
+  "transition_s": 4.0,
+  "simulation_budget_s": 60.0,
+  "feedback_gain": 2.0,
+  "orientation_feedback_gain": 1.0,
+  "parking": {
+    "acceleration_m_s2": 0.5,
+    "response_s": 0.6,
+    "arrival_radius_m": 0.1,
+    "settle_s": 3.0,
+    "navigation_s": 16.0,
+    "max_corrections": 2,
+    "tolerance_m": 0.03,
+    "max_translation_m": 0.03,
+    "support_frame": "source_world",
+    "leg_mode": "source_replay"
+  },
+  "retry": {
+    "max_retries": 2,
+    "release_s": 0.3,
+    "restore_s": 3.0,
+    "joint_speed_rad_s": 0.5,
+    "settle_s": 1.0,
+    "joint_tolerance_rad": 0.13
+  }
+}

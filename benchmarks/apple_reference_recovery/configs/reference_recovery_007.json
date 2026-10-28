@@ -1,0 +1,21 @@
+{
+  "walk_speed": 0.22,
+  "walk_duration": 1.5,
+  "walk_feedback_limit": 1,
+  "stance_offset": [
+    -0.1,
+    0,
+    0
+  ],
+  "constant_walk": true,
+  "brake": true,
+  "brake_duration": 1.5,
+  "body_stance": true,
+  "offset": [
+    0,
+    0,
+    0.02
+  ],
+  "correction_gain": 0.3,
+  "diagnosis": "Repeated velocity-planner handoff drifts; test standing reference legs through existing fullbody channel with offline arm IK after one approach segment."
+}

@@ -1,0 +1,25 @@
+# Rollback benchmark implementation plan
+
+Goal: improve complete controller-state rollback and test equal-wall-clock success, attempt throughput and first-success time across chair sit, button press and table apple pick.
+
+Architecture: isolated versioned runtime in augmentation route; preserve all historical source files bound by experiment manifests. Real API emits compact candidate patches; a deterministic compiler verifies API provenance and assembles fixed fields locally. Same candidate queue and ordering in both arms. Fresh common seed cost charged to both; model loading, verification and shared API planning charged. Rendering and post-search replay validation reported separately. Actual budget exceedance cannot count as in-budget success.
+
+Approaches: independent online API arms confound the mechanical comparison with model randomness; replayed timing alone is not an actual equal-budget test. Use paired precommitted API candidate queues in real physics first; explicitly limit conclusions to this batched planning mode, not arbitrary online API strategies. User delegated task/budget selection through active goal; proceed without additional approval.
+
+Tasks:
+- [x] TDD complete extension snapshots (leg integral, wrist feedback, finger integral/previous), strict profile/state matching, inherited hand export and safe change boundary validation.
+- [x] Isolated runtime supports observer-only contact with preencoder/fingers; no decoder-body modifications. Preserve old pipelines and frozen evidence. Exact restart-vs-checkpoint tests at early and mid-contact frames before benchmark.
+- [x] Compact API candidate compiler with explicit local derivation provenance, schema/range checks; no forged API full decisions. Same sequence in paired arms; scene/physics/safety/acceptance fixed.
+- [x] Deadline runner: shared costs, actual wall clock, arm order alternation, completion-before-deadline only, deduplicate attempts; report censored overruns and full startup costs. Candidate queue limit declared; do not infer failure from an unfinished attempt.
+- [x] Three task profiles, at least three paired starting-policy conditions each; fixed time budgets declared before launch. Candidate queue and shared API decisions frozen. Midpoint evidence gate stops on rollback mismatch.
+- [x] Full restart winning candidate and independent token+hands replay; retained original prefix explicit. Button uses preapproved palm mesh profile and native separately.
+- [x] Render selected success/failure per task, direct shallow links; full decode and sampled visual review. Report paired counts and timing without treating repeated deterministic scenes as independent generalization trials.
+- [x] Full tests, fresh review, git commit, requirements-to-evidence completion audit.
+
+Initial choices: three ordered candidate curricula per task reuse distinct prefixes of the same API queue; these are different search initial policies, not independent scenes. Primary budget120s per arm with API planning amortized over declared3conditions; also report raw unamortized cost and success-by-time curves. If API cost alone exceeds budget, report that honestly and add a separately declared execution-only comparison, never silently exclude it. Exact-equivalence preflight is an implementation validation cost separate from operational seed creation and included in total research cost. Success checking on every attempt is inside budget. Rendering excluded symmetrically. Continue the fixed queue until budget/queue exhaustion even after success to measure batch generation throughput; report first-success separately and validate selected successes afterward. Three predeclared candidate-order permutations per task, not independent scenes.
+
+Ruling: keep existing feature worktree; all new runtime/modules isolated, old source files immutable because prior frozen evidence binds them.
+
+Execution ledger2026-10-25: initial1628preflight failed beforephysics due snapshot Path name shadowing; preserved root. Fixed alias, improved API norm diagnostics; 279tests passed.1634recovery running via /tmp/rollback_benchmark_root, session59988. Chair boundary352andactive392 exact gates passed. First matched order: restart5new attempts/2success vsrollback7/4 within120s. No conclusion for remainingtasks yet. Reviewer identified and fixed button branch evaluator restriction, tail truncation, compact baseline integrity and full-charge timing disclosure. Do not edit bound augmentation source/skill while run live.
+
+Completion ledger: main1634chair/button and1709apple-expanded completed all9matched conditions.150cases audited,60paired arrays exact,3historical seeds exact,3selected full/token proofs.281tests. API12requests26205known tokens including1628failed preflight/1703capacitypilot,0unknown. Apple protocol amended after verifiedqueue exhaustion; original8parameters andrelative orders preserved,4newAPI candidates appended; planningcarry31.689933687s. Main report COMPARISON_REPORT.md. Only selected winners independentlyreplayed; all others provisionalacceptancesuccess. Visualization sparse-reviewonly, training_readyfalse.

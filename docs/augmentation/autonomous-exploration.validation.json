@@ -1,0 +1,133 @@
+{
+  "verified_at": "2026-10-23T14:42:03.954921+08:00",
+  "tests": {
+    "command": "PYTHONPATH=. scripts/humano_python.sh -m pytest humanoid_mimicgen/augmentation/tests -q",
+    "passed": 158,
+    "elapsed_s": 4.61
+  },
+  "real_artifact_smoke": {
+    "passed": true,
+    "cases": [
+      {
+        "case": "replay_0",
+        "frames": 3,
+        "source_sha256": "0fdd61e9edddb48900d90b9183ff3691171dc8c4e1f380af7d6ac52ff7a68ebb",
+        "physics_steps": 0
+      },
+      {
+        "case": "replay_1",
+        "frames": 3,
+        "source_sha256": "36e3d4e8ed53ee384bf49081e35c64c09226d794d9767175ab4b338f6d6a9649",
+        "physics_steps": 0
+      },
+      {
+        "case": "replay_2",
+        "frames": 3,
+        "source_sha256": "85bc7898d1a6fde2b30fc9b22f84d44be01fecb765afc8934ea2fb840411cec8",
+        "physics_steps": 0
+      },
+      {
+        "case": "replay_3",
+        "frames": 3,
+        "source_sha256": "21d8bb1f31b7d570cba7242dfb0142f955af3ca1348e70a501d7d6daedb9dee4",
+        "physics_steps": 0
+      },
+      {
+        "case": "replay_4",
+        "frames": 3,
+        "source_sha256": "3a549db7a0e566236f42b5d9dfd78a1800aaec972767dcd310c454b002571573",
+        "physics_steps": 0
+      },
+      {
+        "case": "replay_5",
+        "frames": 3,
+        "source_sha256": "f18705c10cdb66a30f7f70081e19a8438ce83df9a3f6a2b76fef6680fcffe3b8",
+        "physics_steps": 0
+      },
+      {
+        "case": "replay_6",
+        "frames": 3,
+        "source_sha256": "179454a930439b21aadedbe48ca4b8561d1256f227c8f82288eeab217f89dc53",
+        "physics_steps": 0
+      },
+      {
+        "case": "replay_7",
+        "frames": 3,
+        "source_sha256": "51c3cdabbb050fdd21299733aa6b25e1e1af2148bf6d0ff5d638698d03c6cadd",
+        "physics_steps": 0
+      },
+      {
+        "case": "replay_8",
+        "frames": 3,
+        "source_sha256": "9775a67d0d5920ef5cb50aa6c7858885349b07db2dcfce77201ac40c18141afb",
+        "physics_steps": 0
+      },
+      {
+        "case": "replay_9",
+        "frames": 3,
+        "source_sha256": "48367e035dbc98b4d8bd06d72cd26c9af0612215c06b1fc3d8f4df621e0c9f98",
+        "physics_steps": 0
+      },
+      {
+        "case": "attempt_0",
+        "frames": 3,
+        "source_sha256": "8e8cd8358ca7273d1ba9a32d43aaae1ca2e9968f49aa8383fe8dbc6af5bd6601",
+        "physics_steps": 0
+      },
+      {
+        "case": "attempt_1",
+        "frames": 3,
+        "source_sha256": "604082e753b8b8c08ae50b4619f856d91335df478e8697afb979573506b8c133",
+        "physics_steps": 0
+      },
+      {
+        "case": "attempt_2",
+        "frames": 3,
+        "source_sha256": "9b6fa9609045e30b09f4303311350de086baec23c04405c4c6a0958894e48e56",
+        "physics_steps": 0
+      },
+      {
+        "case": "attempt_3",
+        "frames": 3,
+        "source_sha256": "7227a44e0038a1ef3c44efce3145ff830ac8ed5540fdf9ab47ea7d2e94f7e2b7",
+        "physics_steps": 0
+      },
+      {
+        "case": "attempt_4",
+        "frames": 3,
+        "source_sha256": "2f284129dd33a2375d5841d5368e278c49c354c2fa9778035662451f0c87a4a4",
+        "physics_steps": 0
+      },
+      {
+        "case": "attempt_5",
+        "frames": 3,
+        "source_sha256": "1783db4b71932fafdc1c84ad0d50f328844011a57d1498ca34eebddc5ecdbfa7",
+        "physics_steps": 0
+      },
+      {
+        "case": "attempt_6",
+        "frames": 3,
+        "source_sha256": "43b6dd6cbaf8598c39c82ed0a6a3d9d7eadd1fa1f77153fac648c5fca8260f4b",
+        "physics_steps": 0
+      },
+      {
+        "case": "attempt_7",
+        "frames": 3,
+        "source_sha256": "5dd991d65e1710ed1146a56518d9cd62bcf9fc592c3c668ed8762e19b241fb34",
+        "physics_steps": 0
+      }
+    ],
+    "physics_steps": 0
+  },
+  "physics_steps": 0,
+  "real_api_calls": 0,
+  "task_success_rate_measured": false,
+  "hashes": {
+    "exploration.py": "2c4a7d7917e4a6d148199cbf45d7271ebc8502519c40115a918003b69b554c60",
+    "contact_review.py": "6ce0638186f1f74fafc119abaec269313d0132f25e32e7908cb3577152201123",
+    "contact_batch.py": "663c1a7275bc84c87aaf1376ea5af4b4b8e82204bd057f57cad771960ff514c3",
+    "skills/contact_review/SKILL.md": "986d9fbfe26a334a5ec6dbbd96840dd147375caa46dc6e85fef7f130370e5d85",
+    "tests/test_exploration.py": "f65bdc85dd5a86adceecd932b49d4255088f0de431069fed703522a802ad7e80",
+    "tests/test_retry_rollback.py": "a6ff2b6bee5a1498c7467ee02cdd9004532490270e183c83dd37d7f093b549dd"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "attempt": 1,
+  "failure": "task_not_completed",
+  "observed": "Root moved from x=-.904 to -.879; source requires x around -.55. No hand contact. Body reference did not restore locomotion.",
+  "next_change": "Explicit existing SONIC leg planner approach before hand movement. Do not repeat stalled source cursor.",
+  "pre_reset_restart": "Attempt002 stopped while waiting for decision, no physical execution; archived request directory."
+}

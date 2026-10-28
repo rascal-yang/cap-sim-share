@@ -1,0 +1,8 @@
+{
+  "unix_s": 1791854284.5262945,
+  "old_sha256": "8ec218fa14c97389d5ce00ccd59327c4c2f4e0280594ecf0eee090702d467ac7",
+  "new_sha256": "b94eaf55db78ef92fb1f72faf8511c080ccefdbfea0570d8a2a193853ff68de3",
+  "boundary": "Ball and ChairPush complete; ChairSit already running loaded v2. Next tasks starting with Dolly use v3. No reference picks started.",
+  "reason": "ChairPush measured full-body reference failed to produce required displacement in 10 attempts. Add feedback correction through existing Cartesian-upper-body / SONIC-leg-planner channels on retries after physical failure; no controller/physics/acceptance changes.",
+  "comparability": "Planner strategy evolves across tasks; this is not a controlled causal comparison."
+}

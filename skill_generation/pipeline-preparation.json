@@ -1,0 +1,41 @@
+{
+  "status": "preparation_only_not_launch_ready",
+  "execution_source": "current scene + published task skill + measured feedback",
+  "reference_recovery": "Authoring stage only; isolated from skill-only executor",
+  "controller": "SONIC1.0 CPU teleop mode1",
+  "runtime": {
+    "tensorrt": "10.13.0.35",
+    "onnxruntime": "1.23.2",
+    "sonic": "1.0",
+    "provider": "CPUExecutionProvider"
+  },
+  "forbidden_execution_inputs": [
+    "raw source actions",
+    "native_prefix",
+    "body_keyframes",
+    "expert token file",
+    "source-frame cursor",
+    "intermediate successful physical-state restoration"
+  ],
+  "ordered_steps": [
+    "Verify successful source in authoring context",
+    "Extract and review transferable skill; publish scoped revision",
+    "Freeze experiment/interface/physics/acceptance/budget",
+    "Reset environment and independent GPT execution context",
+    "Analyze scene and feasibility before motion",
+    "Choose approach/stance/contact and generate fresh short waypoints",
+    "Execute and read measured feedback",
+    "Analyze errors before correction/retry",
+    "Independent physical acceptance and success preservation",
+    "Export aligned observations/actions/metadata"
+  ],
+  "budgets": {
+    "attempts": 10,
+    "sim_seconds": 30,
+    "optimization_attempts": 0,
+    "feedback_calls": 17
+  },
+  "optimization_enabled": false,
+  "source_code_changed": false,
+  "physics_started": false
+}

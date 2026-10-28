@@ -1,0 +1,41 @@
+{
+  "recovered_unix_s": 1791852512.325341,
+  "events": [
+    {
+      "task": "G1WholebodyTableApplePickTeleop",
+      "attempt": 6,
+      "kind": "execution_interrupted",
+      "last_sim_s": 3.999999999999937
+    },
+    {
+      "task": "G1WholebodyTablePlatePickTeleop",
+      "attempt": 1,
+      "kind": "execution_interrupted",
+      "last_sim_s": 13.000000000000632
+    },
+    {
+      "task": "G1WholebodyGroundBoxPickTeleop",
+      "attempt": 1,
+      "kind": "execution_interrupted",
+      "last_sim_s": 12.60000000000057
+    },
+    {
+      "task": "G1WholebodyTableButtonPressTeleop",
+      "attempt": 4,
+      "kind": "request_timeout_before_reset",
+      "archived": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/interruptions/G1WholebodyTableButtonPressTeleop/004_before_reset"
+    },
+    {
+      "task": "G1WholebodyGroundBasketPickTeleop",
+      "attempt": 2,
+      "kind": "execution_interrupted",
+      "last_sim_s": 3.999999999999937
+    },
+    {
+      "task": "G1WholebodyGroundBottlePickTeleop",
+      "attempt": 3,
+      "kind": "request_timeout_before_reset",
+      "archived": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/interruptions/G1WholebodyGroundBottlePickTeleop/003_before_reset"
+    }
+  ]
+}

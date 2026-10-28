@@ -1,0 +1,20 @@
+Act as transport coordinator, never as action planner. For each numbered request
+in the specified attempt/mailbox, spawn ONE new child with fork_turns="none".
+The child may read only that request JSON and images referenced inside it. It
+must obey request.system, inspect current and relevant TRAIN images, compute
+new bounded actions using only those observations, and atomically write one
+function-call JSON to request.response_path. No source trajectories, repository
+code, parent chat, other request files, saved policy, or physics calls. No fixed
+model override; inherited serving model identity unavailable. A fresh child is
+required for EVERY decision including repairs; never reuse an action child.
+Coordinator does not edit generated actions. After child completes, preserve raw
+response bytes, write NNN_response.provenance.json with request_sha256,
+response_sha256, fork_turns="none", agent=child task name, and then atomically
+write NNN_ready.json. Invalid JSON is forwarded unchanged for bounded runner
+repair. If child cannot respond, preserve failure in NNN_transport_error.json;
+never invent actions or reuse an old response. Process requests sequentially,
+stop on attempt/done.json, and do not launch physics. Send progress at least
+once per 3 decisions. Parent may monitor evidence but must not supply action
+content outside the frozen system/TRAIN/current LIVE/declared past reflection.
+This is conversation isolation with audited file-read instructions, not an OS
+filesystem sandbox. Provider or model-version claims must remain evidence-based.

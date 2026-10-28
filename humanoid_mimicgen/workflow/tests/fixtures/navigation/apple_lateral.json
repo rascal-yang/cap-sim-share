@@ -1,0 +1,167 @@
+{
+  "bindings": {
+    "contact_policy": [
+      {
+        "start": 1098,
+        "end": 1875,
+        "allowed_geom_pairs": [
+          [
+            0,
+            15
+          ],
+          [
+            0,
+            16
+          ],
+          [
+            0,
+            17
+          ],
+          [
+            0,
+            18
+          ],
+          [
+            0,
+            30
+          ],
+          [
+            0,
+            31
+          ],
+          [
+            0,
+            32
+          ],
+          [
+            0,
+            33
+          ],
+          [
+            104,
+            105
+          ],
+          [
+            104,
+            99
+          ],
+          [
+            101,
+            105
+          ],
+          [
+            103,
+            105
+          ],
+          [
+            95,
+            105
+          ]
+        ]
+      }
+    ],
+    "feet": [
+      "left_ankle_roll_link",
+      "right_ankle_roll_link"
+    ],
+    "frame": {
+      "evidence": "Archived fixed scene world X; new scene must explicitly supply surface heading",
+      "kind": "world_heading",
+      "yaw_rad": 0.0
+    },
+    "ground_geoms": [
+      "ground"
+    ],
+    "navigation_allowed_geom_pairs": [
+      [
+        105,
+        104
+      ],
+      [
+        105,
+        0
+      ]
+    ],
+    "object": "apple_001",
+    "operation_bodies": [
+      "right_wrist_yaw_link"
+    ],
+    "root_body": "pelvis",
+    "support_geoms": [
+      "table_geom"
+    ],
+    "wrists": {
+      "left": "left_wrist_yaw_link",
+      "right": "right_wrist_yaw_link"
+    },
+    "capture_bodies": [
+      "pelvis",
+      "left_ankle_roll_link",
+      "right_ankle_roll_link",
+      "left_wrist_yaw_link",
+      "right_wrist_yaw_link"
+    ],
+    "lateral_surface": {
+      "geom": "table_geom",
+      "normal_local": [
+        1,
+        0,
+        0
+      ]
+    },
+    "operation_stages": {
+      "entry": 1098,
+      "closure": 1360,
+      "first_contact": 1384,
+      "lift": 1390,
+      "end": 1875
+    },
+    "command_hand_joints": [
+      "left_hand_thumb_0_joint",
+      "left_hand_thumb_1_joint",
+      "left_hand_thumb_2_joint",
+      "left_hand_middle_0_joint",
+      "left_hand_middle_1_joint",
+      "left_hand_index_0_joint",
+      "left_hand_index_1_joint",
+      "right_hand_thumb_0_joint",
+      "right_hand_thumb_1_joint",
+      "right_hand_thumb_2_joint",
+      "right_hand_middle_0_joint",
+      "right_hand_middle_1_joint",
+      "right_hand_index_0_joint",
+      "right_hand_index_1_joint"
+    ]
+  },
+  "contact_policy_provenance": "Integer geom IDs resolve unnamed source collision meshes without editing assets. Pairs observed in frozen successful source; allowed only within existing 5mm support/contact band. Runtime contact force limits remain active.",
+  "end_index": 1875,
+  "entry_index": 1098,
+  "files": {
+    "contact_contract": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/contact_contract.json",
+    "model": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/scene.mjb",
+    "result": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/result.json",
+    "trajectory": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/execution/trajectory.npz",
+    "initial": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/initial.npz",
+    "hands": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/execution/hand_commands.npz",
+    "controller": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/execution/controller.npz",
+    "stage_metrics": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/execution/metrics.json",
+    "source_stage_declaration": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/27/20261027_0015_whole_body_navigation_physics/apple/source_manifest.json",
+    "task": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/task.json"
+  },
+  "notes": "Successful-source timestamps and commanded fingers; geometry contact policy copied explicitly from frozen 20261027_0015 declaration. No new contact exemption inferred. Native physical contact limits remain unchanged.",
+  "state_key": "state",
+  "success_criterion": "native",
+  "success_field": "native_success",
+  "support_distance_m": 0.002,
+  "hand_alignment": {
+    "kind": "controller_timestamps",
+    "control_dt_s": 0.02
+  },
+  "stage_evidence": {
+    "entry": "Existing declared open entry 1098; validated against hand/controller commands",
+    "closure": "First nonzero commanded hand sample, timestamp mapped to state row 1360",
+    "first_contact": "First archived robot_object_N > 0.1N at post-policy sample time 8.925s, source row 1384; diagnostic onset, not acceptance threshold",
+    "lift": "First source row after closure with apple Z > initial Z + 0.002m: 1390; diagnostic stage only",
+    "end": "Source last state row 1875; native_success from archived result, not guessed from terminal height"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "reviewed_unix_s": 1791853171.334041,
+  "scope": "middle and final saved first/third-person frames of all 20 cases; not continuous temporal certification",
+  "observations": {
+    "BallKick": "Ball and feet visible in both views; native displacement result retained.",
+    "ChairPush": "Hands at chair back; chair visibly tilts; preserve native tilt-check outcome and raw state for review.",
+    "ChairSit": "Seated pelvis over chair at final frame; head view naturally does not show seat contact.",
+    "DollyPush": "Both hands visible on handle; trolley moves; first/third views complementary.",
+    "GroundBasketPick": "Basket tilted near knees; no hand contact in physical trace, invalid grasp despite native height pass.",
+    "TableApplePick": "No completed grasp at final state; small target poorly resolved in overview.",
+    "TableButtonPress": "Hand near button; native required force/hold was not reached.",
+    "GroundBottlePick": "Target is small/partly occluded after failed interaction; no claimed pickup.",
+    "GroundBoxPick": "Hands near box top/sides; no measured successful lift.",
+    "TablePlatePick": "Hands reach plate region; final plate not lifted to native success height.",
+    "ReferenceBall": "Foot-ball interaction and displaced ball visible; original success retained.",
+    "ReferenceChairPush": "Chair contact then hands separate; native displacement criterion not reached.",
+    "ReferenceChairSit": "Robot turns beside chair but does not achieve accepted seated state.",
+    "ReferenceDolly": "Hands approach handle, but final native displacement criterion not reached.",
+    "ReferenceBasket": "Hands do not form a completed supported lift; basket remains on ground.",
+    "ReferenceBottle": "Bottle remains standing/near its ground start region; hands fail to complete pickup.",
+    "ReferenceBox": "Hands approach box but no accepted lift; ground support remains visible.",
+    "ReferenceApple": "Hands reach tabletop edge; no visibly completed pickup in sampled final state, consistent with measured failure.",
+    "ReferenceButton": "Hands approach table/button region; sampled images cannot establish required force or hold; native checker fails.",
+    "ReferencePlate": "Both hands approach plate near tabletop edge; no accepted lift in measured state."
+  },
+  "training_ready": false,
+  "limitations": [
+    "Checkerboard native MuJoCo scenes, not photorealistic Isaac rendering.",
+    "Sampled frames cannot rule out temporal jitter.",
+    "Task success relies on state/contact evidence, not image appearance."
+  ],
+  "updated_unix_s": 1791856917.0631814
+}

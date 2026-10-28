@@ -1,0 +1,5 @@
+{
+  "attempt": 5,
+  "observed": "Even after velocity zero command at root-.753, robot coasted to-.488 and hip43.6N table contact. Squat request did not stop forward drift.",
+  "next_change": "One1s forward segment followed by bounded reverse velocity for active braking, then settle; retain physical thresholds."
+}

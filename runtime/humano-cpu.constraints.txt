@@ -1,0 +1,5 @@
+# SONIC original-release model files are pinned in humano-cpu.json, not a pip sonic==1.0 package.
+onnxruntime==1.23.2
+tensorrt==10.13.0.35
+mujoco==3.3.6
+gear_sonic==0.1.0

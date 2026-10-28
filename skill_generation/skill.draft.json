@@ -1,0 +1,72 @@
+{
+  "task_id": "g1_dex3_apple_pick_skill_only",
+  "revision_reason": "Prepare isolated skill-driven branch; transfer measured experience without source action sequence",
+  "skill_markdown": "# G1 / Dex3 抓苹果：skill 驱动生成草稿\n\n状态：未发布、未通过新策略物理验证。来源与证据范围见 skill_provenance.json。\n本文只传递接触几何、阶段条件和失败分析，不包含专家关节/腕部时间序列或已录制 token。\n\n## 已观察经验\n\n- 使用右拇指和食指在苹果相对两侧建立接触，再保持接触抬升。\n- 原成功示范的持续接触窗口中，苹果局部食指接触位置约 [0.037127,-0.005921,0.011521] m；拇指约 [-0.035341,-0.014011,0.011089] m。\n- 这些点属于原 Dex3/苹果几何下的观察，只是新接触区域的候选种子。新腕姿必须根据当前手、苹果几何重新生成；不得复用旧腕轨迹。\n- 接触映射：p_world = p_object + R_object @ (scale_ratio * p_local)。物体移动后重新观察、重新映射。\n- 原示范的接触力仅是观察值，当前控制器没有显式夹持力控制能力。\n- 位置到位不等于抓稳。已有失败包括：基座退移、髋部碰桌、短暂接触后滑脱、抬升丢失接触。\n\n## 当前执行能力与限制\n\n- 首轮使用原生 HUMANO G1/Dex3、SONIC1.0 CPU、Cartesian teleop mode1；不得隐式切换到 mode0 或调用旧轨迹。\n- 可调用 velocity_xy、facing_yaw、pelvis_height_m、左右腕位置/朝向、躯干朝向、手指关节目标和有限阶段持续时间。具体范围以 backend.describe 的实际接口为准。\n- 无抓取完成记录的策略仍是 candidate；不能因示范或 waypoint 测试成功就标记新抓法已验证。\n- 原生验收保持约9cm抬升、hold_s=0.005s，不得描述成稳定保持1秒。接触和碰撞门限由执行器落实，不由skill降低。\n- 初批先在当前可达范围内改变平面位置与桌面高度。需大幅移动/转身的场景先记录需求，不自动加入复杂走路动作。\n\n## CaP 生成配方\n\n```python\npolicy pick_apple(skill, scene, observation, interface, budget):\n    analyze_scene()\n    # 明确苹果几何、桌沿/障碍、机器人朝向、当前站位和手部视野。\n    # 判断当前腕目标是否可达，给出站位余量、接近方向和抓法的理由。\n    # 缺失信息记为unknown；不能照搬示范路线。\n\n    select_contact_regions_from_current_geometry()\n    generate_new_wrist_orientation_and_short_waypoints()\n    # 所有waypoint由当前几何和skill生成；统一记录坐标系、时间和动作来源。\n\n    execute_precontact_stage_then_observe()\n    if wrist_tracking_bad or base_drift or obstacle_contact:\n        diagnose_requested_vs_measured_motion()\n        generate_one_testable_correction_within_interface()\n        observe_again()\n\n    execute_contact_stage_then_observe()\n    if required_contact_not_confirmed:\n        diagnose_contact_links_object_motion_and_finger_targets()\n        adjust_approach_orientation_or_fingers_within_budget()\n        # 不进入抬升，不重复无证据的等待。\n\n    lift_in_short_segments_with_feedback()\n    if contact_lost or unstable or blocked:\n        stop_progress_and_follow_measured_recovery_branch()\n\n    independent_native_acceptance()\n    if accepted:\n        preserve_complete_success_and_training_records()\n        # 当前 optimization_attempts=0，不启动优化。\n    else:\n        save_error_analysis_before_reset_and_next_attempt()\n```\n\n## 版本与数据\n\n一次尝试内冻结skill；失败后先保存事实、假设、单一拟议修改和拒绝条件，再发布下一版本。\n重试可复用本条skill生成路线中已验证的阶段；不得引入外部专家动作或恢复中途成功状态。\n记录真实执行指令、状态、接触、原始相机帧及时间对应关系；展示视频与训练RGB分开。\n",
+  "supported_controls": [
+    "velocity_xy",
+    "facing_yaw",
+    "pelvis_height_m",
+    "right_position",
+    "right_quaternion_wxyz",
+    "right_fingers",
+    "left_position",
+    "left_quaternion_wxyz",
+    "left_fingers",
+    "torso_quaternion_wxyz"
+  ],
+  "evidence": [
+    {
+      "id": "measured_reference_contacts",
+      "status": "observed",
+      "scope": "G1 Dex3 apple, converted original-scene success, persistent thumb/index contacts over0.2s",
+      "sha256": "9c2e4fece44a4206ba25f9d2eeb00051dd2a9311e509a00ae018e222d1d78fd3"
+    },
+    {
+      "id": "large_shift_attempt_004",
+      "status": "failed",
+      "scope": "Closer stance reached contact: thumb/index briefly touched during full closure then slipped, apple moved ~1.8cm. Endpoint contact_s=0 masked transient contact unless full substeps inspected. Recenter and reopening did not recover contact.",
+      "sha256": "cb82697591bc99fe55d965e07f52ff355957860e1ba7d50fedb32d1253f6811c"
+    },
+    {
+      "id": "crouch_tracking_diagnosis_20261013",
+      "status": "observed",
+      "scope": "Read-only mode1 attempt2:0.68m target achieved with~19.67cm base retreat; mode0 attempt9~2.93cm root height tracking error. No lower target tested; physical minimum unknown.",
+      "sha256": "e6ca9d65c46957e9213161f57d57807681ec874760c618ec5ddcdf963eace68e"
+    }
+  ],
+  "strategies": [
+    {
+      "id": "geometry_planned_contact_grasp",
+      "status": "candidate",
+      "required_controls": [
+        "right_position",
+        "right_quaternion_wxyz",
+        "right_fingers"
+      ],
+      "evidence_ids": [
+        "measured_reference_contacts",
+        "large_shift_attempt_004"
+      ],
+      "applicability": "New waypoints from current object/hand geometry; no new grasp success established"
+    },
+    {
+      "id": "stance_adjust_then_reobserve",
+      "status": "candidate",
+      "required_controls": [
+        "pelvis_height_m",
+        "torso_quaternion_wxyz",
+        "right_position"
+      ],
+      "evidence_ids": [
+        "crouch_tracking_diagnosis_20261013"
+      ],
+      "applicability": "Measured stance/root feedback required; do not infer a universal crouch height"
+    }
+  ],
+  "limitations": [
+    "Draft only, not a validated policy",
+    "Original contacts are scoped observations; new contact/stance selection is unvalidated",
+    "No raw expert actions/native-prefix permitted in execution",
+    "No force controller; retain position tracking/contact monitoring only"
+  ]
+}

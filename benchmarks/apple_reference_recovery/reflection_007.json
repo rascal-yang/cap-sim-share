@@ -1,0 +1,5 @@
+{
+  "attempt": 7,
+  "observed": "Standing reference switch moved root backwards from-.753 to-.936. Later root settled-.87; wrist remained-.49,.89z, too far/high for apple. No target contact.",
+  "next_change": "Return to Cartesian upperbody plus SONIC planner lowerbody; use active reverse velocity during reaching to counter demonstrated forward drift, rather than a separate stance handoff."
+}

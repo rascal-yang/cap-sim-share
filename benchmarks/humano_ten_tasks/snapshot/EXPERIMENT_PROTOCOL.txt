@@ -1,0 +1,12 @@
+Scope: 10 native HUMANO tasks, no-reference first, then 10cm world-Y target translation with one measured expert reference per task.
+Source dataset and all trajectories/video remain outside Git.
+Each task/group: up to 10 physical attempts, 30 simulation seconds per attempt, 12 phase feedback calls, one post-success optimization within that budget.
+Same native assets, SONIC control API, physics, native task checker; no runtime state injection or attachment constraints.
+No-reference source data isolation: configurations and initial snapshots allowed; expert motion/video read only after hash freeze of all 10 summaries/results.
+Planner: current GPT session plus GPT-authored bounded feedback Python programs. No external model API credentials/calls available. This is not a controlled online-model benchmark.
+Failure diagnosis precedes reset/retry. Partial process losses consume a slot if a physical reset occurred. Before-reset requests do not consume physical attempts. Interrupted trials are separately marked, never claimed as completed evidence.
+Native height success is not by itself a valid pick; hand contact/support/robot collision evidence is audited separately. Basket knee-lift false positive retained but excluded from valid task successes.
+Optimization only after first accepted success, and cannot erase an accepted baseline. Native acceptance and measured roughness decide whether optimized candidate replaces selection.
+Reference group inserts new lateral alignment, retargets source wrist positions through bounded geometric IK, uses actual contacts to gate lifts. References are motion inputs, never evidence that a newly generated rollout succeeded.
+Time accounting distinguishes download/setup/extraction/planning/attempt/render; manual mailbox waits and infrastructure gaps must not be labeled physical execution or model API latency.
+Dual-view videos use saved measured states and MuJoCo EGL head_stereo_left plus fixed external camera; renderer does not advance physics. This is not Isaac rendering or photorealistic video certification.

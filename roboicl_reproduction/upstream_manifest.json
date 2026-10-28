@@ -1,0 +1,702 @@
+{
+  "repository": "https://github.com/Mosi-AI/RoboICL",
+  "commit": "c0e58e456ce4b2ea1c401d1b261d6e0327c6e04c",
+  "files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "git_blob": "a5b0d9b2fdcc8a7bd6ac48676fd28f3e4179619e",
+      "available": true,
+      "sha256": "5ca7842137a8794511ba878f019939f5a1c6dd1145faa23f9a19b787bb76df63"
+    },
+    {
+      "path": ".gitmodules",
+      "mode": "100644",
+      "git_blob": "cbb8ef4e957da56a8d7848612f67235ab7bcabce",
+      "available": true,
+      "sha256": "e8c3b7688cfc2a5438d9a0d67ffa4ff32f338fce95b2c32249712580114a0588"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "git_blob": "fa9691769884270c4b27157cb62744e6cc9e2097",
+      "available": true,
+      "sha256": "f9ab1c60939b0bf565f4eb06df7bc87ab14753f20b7f2af74ed598a3b78cefaf"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "git_blob": "6cd225431093c8f3072b4c81e5029f9067cb82ea",
+      "available": true,
+      "sha256": "f477b4e782e163f7d7ce0e5560eb17caa555b98e0397246c4f857cbb9c1b90f6"
+    },
+    {
+      "path": "configs/adaptive_horizons.json",
+      "mode": "100644",
+      "git_blob": "83ac235668a61c469261b6766f6f5939148c2ddb",
+      "available": true,
+      "sha256": "88fe65c3af1370766099bd276b7eeb94578d6dd81055aa829a35d8e5b7e688fa"
+    },
+    {
+      "path": "configs/data.lock.json",
+      "mode": "100644",
+      "git_blob": "c23b9df4df1e81432e429739d0f869fad96f6e99",
+      "available": true,
+      "sha256": "f8802fa73503de0344f3a5c6bd864edb272093985bc01d69b017877d93e01fba"
+    },
+    {
+      "path": "configs/protocols/one_shot_j12_b12.json",
+      "mode": "100644",
+      "git_blob": "3bc90288c9e9329f674707bb2ad86b8f0dc5fb26",
+      "available": true,
+      "sha256": "427f5cbeab9f80b796e2eda954b42491c345c062d63900114bdd7595f5a936d9"
+    },
+    {
+      "path": "configs/protocols/zero_shot_b25.json",
+      "mode": "100644",
+      "git_blob": "bb6a92cac298752f33fd32d5d64058784b4f78f8",
+      "available": true,
+      "sha256": "406594ab03778160b9133d5735462172292b8e935300c9354fe5d7932ce5d156"
+    },
+    {
+      "path": "configs/references/one_shot_j12_b12.json",
+      "mode": "100644",
+      "git_blob": "273425c833e17ac239bdac3d6c7acd83bd765d43",
+      "available": true,
+      "sha256": "77e99c349ce2d495f392a7cf97c4ca934a00a974851ec5461adc6073132c803b"
+    },
+    {
+      "path": "configs/shared_harness.json",
+      "mode": "100644",
+      "git_blob": "b59a60f1a42433a3b61d5fc13f81ba0bf86f15a5",
+      "available": true,
+      "sha256": "16c9c68419a68f3d0df516cd9e70498c63fb7b8c75d7030a041f7f130d447138"
+    },
+    {
+      "path": "configs/tasks/align_blocks.json",
+      "mode": "100644",
+      "git_blob": "fa5afe880ce1a9b72875bdc94691eee641a912fa",
+      "available": true,
+      "sha256": "e5291db639c652e821d52f87af596cb58819b6b0492d4ecd71795db0521cf01e"
+    },
+    {
+      "path": "configs/tasks/arrange_largest_number.json",
+      "mode": "100644",
+      "git_blob": "4e16e98f0ed9345c70a2549d5dd399b1a8e6d153",
+      "available": true,
+      "sha256": "9c16ed4907893d26b8bacd3bf5286c9b85edde4470f79e4759ac279af99df9a1"
+    },
+    {
+      "path": "configs/tasks/build_tower.json",
+      "mode": "100644",
+      "git_blob": "b3ca0bc98573d644bd5f9404385e3b73959d7114",
+      "available": true,
+      "sha256": "75d4a5399a4d8491b39acbc17cb1d9b46e5c4dd715e949e062aa6763a1eed54a"
+    },
+    {
+      "path": "configs/tasks/classify_objects.json",
+      "mode": "100644",
+      "git_blob": "302d5d987b65477c56084db2592bfb86b00ba50a",
+      "available": true,
+      "sha256": "c2781147d468465a3655244ee9775885f69d6946cadf0dba902b3244daf720ca"
+    },
+    {
+      "path": "configs/tasks/classify_objects_by_language.json",
+      "mode": "100644",
+      "git_blob": "a4efd128881e1303a9db20c47b3ed5153dcfe811",
+      "available": true,
+      "sha256": "bf0edfc476616fb0122b49bc5e50d88b93272acbd7a6e6600ca91a8c43ca4b94"
+    },
+    {
+      "path": "configs/tasks/cover_blocks.json",
+      "mode": "100644",
+      "git_blob": "7067acebdceb09e3faf70e6cceb3c3cf4162fa74",
+      "available": true,
+      "sha256": "a79020ce1075b9b520dc2036b705b1dcf37b630810d57316a20e886563e14aba"
+    },
+    {
+      "path": "configs/tasks/deposit_coin.json",
+      "mode": "100644",
+      "git_blob": "5ba5f6d97d2e8eefb50a4be2f96744e520186428",
+      "available": true,
+      "sha256": "3cb666d55ca103d44271cde82b2c8f33e0708baebe51e0329c6c80f968189d94"
+    },
+    {
+      "path": "configs/tasks/fasten_screws.json",
+      "mode": "100644",
+      "git_blob": "fa84534aba8db871fc437188fe830184517714f0",
+      "available": true,
+      "sha256": "ea66a61bc05e15ab5f8c2c5dedc59f8934e149105b842090e6b5a7e1c4767f88"
+    },
+    {
+      "path": "configs/tasks/fill_egg_holder.json",
+      "mode": "100644",
+      "git_blob": "42d4a92f67787d30b7b8aecb266ae7a7388ea799",
+      "available": true,
+      "sha256": "85ec8748ff5a1c777f7ad51206fb31d0b2a617061951f2ff40024830ebd1c02e"
+    },
+    {
+      "path": "configs/tasks/fill_pen_holder.json",
+      "mode": "100644",
+      "git_blob": "46daef19c7f9ab1810d39760805b94170cd837f2",
+      "available": true,
+      "sha256": "26c281844d0f2a9811c4b5f2be00a6581fb6e8fe54265d4cc01ca2cfc70e649f"
+    },
+    {
+      "path": "configs/tasks/fold_clothes.json",
+      "mode": "100644",
+      "git_blob": "c2f647c4f3d667a28c7eb232b467a570caece6c1",
+      "available": true,
+      "sha256": "48a0a6a81da86ba2c27889e81f5af1c69e9ddb8a90907d08c5f44b8e5642b787"
+    },
+    {
+      "path": "configs/tasks/general_pickup.json",
+      "mode": "100644",
+      "git_blob": "49a73b51e355e3d76b8dd3854e553063cbbf16e0",
+      "available": true,
+      "sha256": "d015dc87942d909407d07e16e24045c3a79c828e91e905a96bd6cc6c568f0e72"
+    },
+    {
+      "path": "configs/tasks/hang_mugs.json",
+      "mode": "100644",
+      "git_blob": "df332a530e0192c4d6bf3e4ccda3c2e8124ac8e5",
+      "available": true,
+      "sha256": "7076fb8945af2bfa0967a37119546f7483f6027ab9fd66b1f5cd73604cd18fb7"
+    },
+    {
+      "path": "configs/tasks/imitate_sorting_sequence.json",
+      "mode": "100644",
+      "git_blob": "64d9e3581d19d9269452b247f9f31f8433a0113f",
+      "available": true,
+      "sha256": "0022f652574a4b4031f59437273dfaf6fe131cb40498a3ca43a6a6d1eb61ed26"
+    },
+    {
+      "path": "configs/tasks/insert_key.json",
+      "mode": "100644",
+      "git_blob": "77b6278ae8f20c3d89a253b6053128cb901eecee",
+      "available": true,
+      "sha256": "0c5ea9782a8de566341de8724e027aa6440818d7de27249bb3d0d96ab1aa0a92"
+    },
+    {
+      "path": "configs/tasks/insert_tubes.json",
+      "mode": "100644",
+      "git_blob": "70484660aabd6619e5695249ceae1562206a55b6",
+      "available": true,
+      "sha256": "d485a6b6aaaf905cb239817b61afe5b4af27f996c73c568738b4c23f10888ee3"
+    },
+    {
+      "path": "configs/tasks/make_kong.json",
+      "mode": "100644",
+      "git_blob": "244c7da80920d27673ad44d9075daff48d9b6a80",
+      "available": true,
+      "sha256": "c5290310aa7b42a2a02774f63cad544c77837ffc1f1e4dbf75efc846bda2cbe4"
+    },
+    {
+      "path": "configs/tasks/make_toast.json",
+      "mode": "100644",
+      "git_blob": "b79076c51d223e5a30f89ae8aff4aa5bb04d531c",
+      "available": true,
+      "sha256": "ff6ae603163a8042e77d97e94788775332af7d39b7164b95894aed9c7b94b8d6"
+    },
+    {
+      "path": "configs/tasks/match_and_pick_from_conveyor.json",
+      "mode": "100644",
+      "git_blob": "aa23846cfea9ef4afff87a061a9a26ae24a7afc5",
+      "available": true,
+      "sha256": "5e12433821f9304b2a5a4e1cdbbad8d6d68faab9703511a2c3a6db2a569dc9c8"
+    },
+    {
+      "path": "configs/tasks/organize_table.json",
+      "mode": "100644",
+      "git_blob": "5c3d7eed417a13fae4cc0c0ae72926238e5dc71e",
+      "available": true,
+      "sha256": "7d3650e0c9d059e361099acfe27c1b3e5b2e917249ef97caea0bd6ef6b2b3d6d"
+    },
+    {
+      "path": "configs/tasks/pack_objects_into_box.json",
+      "mode": "100644",
+      "git_blob": "38565b95cb2bed8021b897b910c288d8ec9b6aa6",
+      "available": true,
+      "sha256": "f89aeb9d9dbee5956eb889b65011991109d0693a23ebe4148b3d0d7d208c08a8"
+    },
+    {
+      "path": "configs/tasks/pick_from_conveyor_by_image.json",
+      "mode": "100644",
+      "git_blob": "647c41bb668b424c1e01098b639edefba78b0df9",
+      "available": true,
+      "sha256": "7d309e56bf3359d7b11516098bb7b3d5c96e55113bd36f6716683732f1cd1c1f"
+    },
+    {
+      "path": "configs/tasks/play_Xylophone.json",
+      "mode": "100644",
+      "git_blob": "21e58503b4763384b59d065efd47756a882d7938",
+      "available": true,
+      "sha256": "7264330fe355e39f876724c71d92b0c6548d1436d093957edadc77e9e27ecc4d"
+    },
+    {
+      "path": "configs/tasks/play_stacking_toy.json",
+      "mode": "100644",
+      "git_blob": "c014c0407d1adfd9a85ff73695098dc8ba36d34c",
+      "available": true,
+      "sha256": "3ceaf0316dbca8bba2a11233214517a90707bf5a6f59365b5b808bfec9835603"
+    },
+    {
+      "path": "configs/tasks/play_tic_tac_toe.json",
+      "mode": "100644",
+      "git_blob": "80cc133cc11301db41bb2f12002a4d1d39cf806b",
+      "available": true,
+      "sha256": "9f9553ef92af4d5f2feff86b07b2463400ad01a2cd9b7b754774d4aad6022728"
+    },
+    {
+      "path": "configs/tasks/plug_in_charger.json",
+      "mode": "100644",
+      "git_blob": "bdc93706be55f489c0a7a04c74afc9f19a802b15",
+      "available": true,
+      "sha256": "c6e9fcfca9c9a14351e75a4565160ef456a05210cdbfcebfe571a3a6b6a0645b"
+    },
+    {
+      "path": "configs/tasks/pour_balls_into_vase.json",
+      "mode": "100644",
+      "git_blob": "c919ceeccb3cf7e6b24296080e43d4b01fffe532",
+      "available": true,
+      "sha256": "4cdd4a063c5fdb34aded15fcaaeb3066bc5b57b6c1e64b514cda801cf3b1b068"
+    },
+    {
+      "path": "configs/tasks/pour_by_language.json",
+      "mode": "100644",
+      "git_blob": "ac5fc5414b54df2993322e444fb52e1833aaee6c",
+      "available": true,
+      "sha256": "7c0eabb54ae609fd12fc1eea89fc91c81e06f9661e92e34c6ab345a1639907e5"
+    },
+    {
+      "path": "configs/tasks/pour_liquid_into_cup.json",
+      "mode": "100644",
+      "git_blob": "cb14e38ac7bcf3b6b417ab9a5bc9d789979b3cf8",
+      "available": true,
+      "sha256": "a0e9a363563298a0ee9ea3fdb7a286542450d97c1d831039608bd846188d3f61"
+    },
+    {
+      "path": "configs/tasks/press_by_number.json",
+      "mode": "100644",
+      "git_blob": "e5812d8b47a53a48cef798e5e83706545d83327f",
+      "available": true,
+      "sha256": "95f4366d763b9f7377358707c76e0fd8cd9f866a35b6bb2a17bb922a9b70b68b"
+    },
+    {
+      "path": "configs/tasks/push_T.json",
+      "mode": "100644",
+      "git_blob": "720ed2d6fc95753fc65807ed42243a8070587df5",
+      "available": true,
+      "sha256": "02fa141f8f82cc65826c179eff7bf385d9291f2f4c2ea5c865b760923b1421c7"
+    },
+    {
+      "path": "configs/tasks/put_bottles_into_dustbin.json",
+      "mode": "100644",
+      "git_blob": "f872bf48e67b91c70c6c5b8813f3cc99cdf34251",
+      "available": true,
+      "sha256": "f47317bbebecb2060d8d3c29c821f49efe38611f0eea97709650b45c1c1a98da"
+    },
+    {
+      "path": "configs/tasks/solve_equation.json",
+      "mode": "100644",
+      "git_blob": "c5e73100828293ee39064d3a1e79090c79cc2124",
+      "available": true,
+      "sha256": "f12734d1a0996b1da57e74cab61845c9d97f2ddd4ed7d186657dd9a7951e01c0"
+    },
+    {
+      "path": "configs/tasks/sort_nesting_dolls_by_size.json",
+      "mode": "100644",
+      "git_blob": "2980692c3f6f800c7aac55afc324bf13fff7ae82",
+      "available": true,
+      "sha256": "144f3d17f596afbc88c32bc67e872b07a513c3e254c84477e542c7772292b7f7"
+    },
+    {
+      "path": "configs/tasks/stack_blocks.json",
+      "mode": "100644",
+      "git_blob": "49639a64a6e30fd7e43ede1d7a0fa725cf8767e5",
+      "available": true,
+      "sha256": "5a359e9b7c05c950b1ef83410984a69e6a24d9f60b9567fb916c566b726c81dd"
+    },
+    {
+      "path": "configs/tasks/stack_blocks_by_language.json",
+      "mode": "100644",
+      "git_blob": "f9a4f41d5e06eae7e485170823a3e28cfe0e2605",
+      "available": true,
+      "sha256": "1ddc1a1fbdc5cecc6f5ce88dee6f559f5a8629c935a30eb151c403eded67f927"
+    },
+    {
+      "path": "configs/tasks/stack_bowls.json",
+      "mode": "100644",
+      "git_blob": "7b61a0987a133219315a89a0943b854d20351789",
+      "available": true,
+      "sha256": "3c2f93a5f8c44e6165c3a5ed5c291ac79623eb28fd2d97c6b59e8e9dc77a2cba"
+    },
+    {
+      "path": "configs/tasks/store_laptop_and_headphones.json",
+      "mode": "100644",
+      "git_blob": "88a2c2afa5aac186dbcd96de8aa9f46cf2f17e49",
+      "available": true,
+      "sha256": "8b6081db666830ac912d99bfaf451e92731281774b5121be14f67d5725cc6008"
+    },
+    {
+      "path": "configs/tasks/store_tools_in_toolbox.json",
+      "mode": "100644",
+      "git_blob": "6635025dcdb9a3e7f60adf228d2215b19efd7f3b",
+      "available": true,
+      "sha256": "63e43c59fb505d72e20d0a85ac6e0c20f06f8ceecae1d4acfa40ba46abf6d726"
+    },
+    {
+      "path": "configs/tasks/swap_T.json",
+      "mode": "100644",
+      "git_blob": "6be1db579c21e7a32c3218fc578c9bc39e352f65",
+      "available": true,
+      "sha256": "166af63847813f6ba46ef05906871d2ce795268e08836d4b1b50533141eddea4"
+    },
+    {
+      "path": "configs/tasks/swap_blocks.json",
+      "mode": "100644",
+      "git_blob": "e5a7a2aaae70181c079a22d3476dbf94533328cc",
+      "available": true,
+      "sha256": "5edff82687819e14d2407285359cc1b3822d10d28f133352a9101c02f199ad97"
+    },
+    {
+      "path": "configs/tasks/sweep_blocks.json",
+      "mode": "100644",
+      "git_blob": "e9731d8303c0dcf61fb5c984b8ac7218765f4410",
+      "available": true,
+      "sha256": "b16091278dd9473a7795c0f044b4a899d999e03cc50820cb6b4bdac3e466345f"
+    },
+    {
+      "path": "configs/upstream.lock.json",
+      "mode": "100644",
+      "git_blob": "cabdc95c4d51b9ca3dd1d44d8d57c3ea91f9d397",
+      "available": true,
+      "sha256": "b387a3be3984e6df34cd49dfd069f8efe66a9c4246c609db1052592a514b5a44"
+    },
+    {
+      "path": "images/rednote.png",
+      "mode": "100644",
+      "git_blob": "ae49a16575a0e529faad711cc5af4daa546f5690",
+      "available": true,
+      "sha256": "50436fe95d1a1a57023b2f63d2dceb445e93d3ae65922ec7f883d520ddb01ac4"
+    },
+    {
+      "path": "images/teaser_benchmark.png",
+      "mode": "100644",
+      "git_blob": "ab37c75449a2d6d2faa4de5b2d42732aa7ed97bf",
+      "available": true,
+      "sha256": "1daf755c05010656dbb8427d2d5583c5547e1515012412ad584caf735c5afcf9"
+    },
+    {
+      "path": "images/wechat.jpg",
+      "mode": "100644",
+      "git_blob": "236a9f1395cfe6766817dbf1f8008fad72217401",
+      "available": true,
+      "sha256": "5d48deabf7f945c2c07154ddd8c89b877e9c56ee40272255b15bb79cf0d3effb"
+    },
+    {
+      "path": "roboicl/__init__.py",
+      "mode": "100644",
+      "git_blob": "3d1bcb222194eb3dae46e8d63f7e5cbf87f7f5ff",
+      "available": true,
+      "sha256": "4a911038cd32ac5bb2cd953a45aae0592342c299ee2e1e25f9c70a9502e204d7"
+    },
+    {
+      "path": "roboicl/config.py",
+      "mode": "100644",
+      "git_blob": "dbe904510952a997529a10e07a7db83ecd0ec115",
+      "available": true,
+      "sha256": "9b07c99c4da2eacc34319f6073051a144d1f68c347b572758274429a7d1541c4"
+    },
+    {
+      "path": "roboicl/paths.py",
+      "mode": "100644",
+      "git_blob": "4b089aa060d665bb395814c03f54b748bf0e090f",
+      "available": true,
+      "sha256": "258c3a36cbdb03aec7bea7d4d0df75988f99a320dd932b0d72ad428d8884bf2c"
+    },
+    {
+      "path": "roboicl/policy/__init__.py",
+      "mode": "100644",
+      "git_blob": "99575b77c05d7ed8c8f3cc41fc6d300fc30a4f07",
+      "available": true,
+      "sha256": "050d7bfd0354908919ae5eba4cfbcb95d9bc7392780b3f256d8a16228b2db447"
+    },
+    {
+      "path": "roboicl/policy/action_feedback.py",
+      "mode": "100644",
+      "git_blob": "5b999072060c454a892ae7a2064f8d3305bb9e30",
+      "available": true,
+      "sha256": "eda898da1b1c75f33e779c0d1983a91d47e46711f04faa54a68766db85103fac"
+    },
+    {
+      "path": "roboicl/policy/anchored_cache.py",
+      "mode": "100644",
+      "git_blob": "3a5653084d07327da0907d7d4427ca51f98dd6f2",
+      "available": true,
+      "sha256": "3ddf78d8af15603e93f1c0086228fad1225ca58b9b7e9f56a480fcc052ea1f40"
+    },
+    {
+      "path": "roboicl/policy/astra_policy.py",
+      "mode": "100644",
+      "git_blob": "f70d432ef817e5bdb462a09438cb2f6a57559851",
+      "available": true,
+      "sha256": "c5ce44f5760223f0a9091f946160feb30ff55e9d50e15ad1f8e67c4e1b0fbcbe"
+    },
+    {
+      "path": "roboicl/policy/bounded_policy.py",
+      "mode": "100644",
+      "git_blob": "6c21a24aa6076cafc5ed4d90aaf9ac76c28ec8fe",
+      "available": true,
+      "sha256": "a192606c323f66b8a3544fcf1a0072a935a73b26a58bde985218aedd63892a89"
+    },
+    {
+      "path": "roboicl/policy/camera_preflight.py",
+      "mode": "100644",
+      "git_blob": "d7b4c68e2c71e85e92429c03c4ac85d006e596d1",
+      "available": true,
+      "sha256": "4730f0e4c7d04810ce8d9f5a88dc2519c9e3751d34c47302e702249fb0d530f7"
+    },
+    {
+      "path": "roboicl/policy/camera_readiness.py",
+      "mode": "100644",
+      "git_blob": "26c813c62157fec6c98b3a68032bf74d382dc93c",
+      "available": true,
+      "sha256": "ddd63fb36e626ca2d7bceb82f24e762f80352bc6431eebb476c399440d42e754"
+    },
+    {
+      "path": "roboicl/policy/dialogue_policy.py",
+      "mode": "100644",
+      "git_blob": "48f1c1281964bf0e648e3644701fafee482c8e3c",
+      "available": true,
+      "sha256": "ca7952c708f62e1808c8a4bae04f2eaa9098dcbbc0bf15df98aad7b95417b6f0"
+    },
+    {
+      "path": "roboicl/policy/eval_failure.py",
+      "mode": "100644",
+      "git_blob": "3de713e5a42b36a7b2a84f28c337c7ff313a00e3",
+      "available": true,
+      "sha256": "684aaae72ec51c84be74058c028e3c2954e909dbb49133566b6de3ebeba4d681"
+    },
+    {
+      "path": "roboicl/policy/head_calibration_capture.py",
+      "mode": "100644",
+      "git_blob": "2d080dd99fb8b76b411b096f24f23076b11f37ef",
+      "available": true,
+      "sha256": "115af0a4ed163cd5a03f06f337df81f3fba3f67156ee7fd579127a80c9fff244"
+    },
+    {
+      "path": "roboicl/policy/head_camera_prompt.py",
+      "mode": "100644",
+      "git_blob": "704a53e5c82a47ae0ff637c54c0b793e46bfbf5f",
+      "available": true,
+      "sha256": "10972c5af7891ef6634b1b1359053f03f54ea056bdb10caaf04f315b8beeaec4"
+    },
+    {
+      "path": "roboicl/policy/history_context.py",
+      "mode": "100644",
+      "git_blob": "1686fafa18d5d3144cd99ec8fb5d8c30340e9ef0",
+      "available": true,
+      "sha256": "264c94b792bbfb67c4c42791d9f10fb59ab2ee49d2725c8ba8a43797556e82fd"
+    },
+    {
+      "path": "roboicl/policy/image_budget.py",
+      "mode": "100644",
+      "git_blob": "5bfbcc6b0ce2348346dfe7fd6d8fa914525473e7",
+      "available": true,
+      "sha256": "2615153df9fe83faecefa18b41e6ae734229a18d21b2f04a4df710e191411b1f"
+    },
+    {
+      "path": "roboicl/policy/observation_images.py",
+      "mode": "100644",
+      "git_blob": "bad92ba0ea5f652dcb9f282111a14a6428f1bd14",
+      "available": true,
+      "sha256": "6f27972055fdba92e2b120200d207deda34be84bbf5544db2ff18cd8753722c7"
+    },
+    {
+      "path": "roboicl/policy/provider_compat.py",
+      "mode": "100644",
+      "git_blob": "522bf0146c121aec8db8b194e8c9fd7b30f62c59",
+      "available": true,
+      "sha256": "df49b3bf9fd74b8badf26ea9fb16fa7b496b614ea9f89c2462790723329a273e"
+    },
+    {
+      "path": "roboicl/policy/reference_data.py",
+      "mode": "100644",
+      "git_blob": "616d0cd000415f27de24eaf63f9fa58ef34abfef",
+      "available": true,
+      "sha256": "7b529a9855da174ad144bf1118abcb375272ad4de20b5b65a426e25e10e7c2e6"
+    },
+    {
+      "path": "roboicl/policy/rolling_cache.py",
+      "mode": "100644",
+      "git_blob": "4de86181b309ce240a4573c6f76dfef2ac761c4f",
+      "available": true,
+      "sha256": "a4c671d1022fb5fe691a2b97bae12a57e30aca68e95789de9c112460a8fe83f0"
+    },
+    {
+      "path": "roboicl/policy/train_endpoint_observations.py",
+      "mode": "100644",
+      "git_blob": "408638bc8788fe503f4ee9b90b3f3930a0126443",
+      "available": true,
+      "sha256": "6226a22564718f66494d0fcc0bba6c3c300f2301c9398aaaddf2dd4587c39879"
+    },
+    {
+      "path": "roboicl/policy/train_reference_bundle.py",
+      "mode": "100644",
+      "git_blob": "282f9da2221296464736278861b2214fd18d5e4a",
+      "available": true,
+      "sha256": "a52e434f4fbed625cc83feb3dd0ea00834a927e7c3bdb32a9684a1428401826b"
+    },
+    {
+      "path": "roboicl/policy/train_reference_checks.py",
+      "mode": "100644",
+      "git_blob": "9e3ab3f3e3ed70aa3b1c479aa9f37061bbeedfe0",
+      "available": true,
+      "sha256": "d9efdf600835883c3d4b6dbc200f66999678d3041945b698060878b955524adb"
+    },
+    {
+      "path": "roboicl/policy/train_tool_reference.py",
+      "mode": "100644",
+      "git_blob": "4a7cc1b440f9784d464ca82827eda6708eaa8841",
+      "available": true,
+      "sha256": "6ca2cd7658524b3301b509f29559f48be85f847e896775657f32b166fe21d1f6"
+    },
+    {
+      "path": "roboicl/policy/trajectory_memory.py",
+      "mode": "100644",
+      "git_blob": "8542840fa65ff9fc8fcc5d3e15361473a51ae499",
+      "available": true,
+      "sha256": "11d54164964240a6c87d3e288d05c7c70e6493e72d1ff6bfe4c64a8d4d93d4ae"
+    },
+    {
+      "path": "roboicl/policy_server.py",
+      "mode": "100644",
+      "git_blob": "c4b1db93ab8b147ea00427581b6cd0ee4fd01776",
+      "available": true,
+      "sha256": "429712f0504412ac5ec5b59e2a1ae1fde95dba14118e8e0989c60540a1731855"
+    },
+    {
+      "path": "roboicl/reference.py",
+      "mode": "100644",
+      "git_blob": "4e1557e136769540455c60bfa29655eb66b2f998",
+      "available": true,
+      "sha256": "a4bbcd194456b653ceb3b97ca77f7750315baf38e9ab36af033f3b981dc91a2d"
+    },
+    {
+      "path": "roboicl/reference_setting.py",
+      "mode": "100644",
+      "git_blob": "c704ff91d6f8f5ac8d83fd590b96f4d45ea55d42",
+      "available": true,
+      "sha256": "30d1a03578864521251c0f403e18b64cf7c038b4e025c98342404ba1a137811c"
+    },
+    {
+      "path": "roboicl/robodojo.py",
+      "mode": "100644",
+      "git_blob": "342c3558f1c3f772ddd244870652111e26132280",
+      "available": true,
+      "sha256": "9df06e01081d5c98e30b7f59d7e5c2c36fa50c3bca16b4ce63f793cde0a3710e"
+    },
+    {
+      "path": "roboicl/rollout.py",
+      "mode": "100644",
+      "git_blob": "7b2948b762aa1a8777838c334dda30b443b37c59",
+      "available": true,
+      "sha256": "861a0fea96e81a1b7b168fcb134c548115a4ac8f2ff4b3bf036be0e29e23ffdf"
+    },
+    {
+      "path": "roboicl/run.py",
+      "mode": "100644",
+      "git_blob": "384bea61dfd44b1957495c58daf1f7ddf73c2f65",
+      "available": true,
+      "sha256": "ebb88b911f318745dc40a905768e3144337a6a72b5048246ef03672868bdceea"
+    },
+    {
+      "path": "roboicl/upstream.py",
+      "mode": "100644",
+      "git_blob": "f88a92de77737729b58641e480806237fc7a93ab",
+      "available": true,
+      "sha256": "634fe3a16ea45679a7d2913557b0acad36e7d3bccc2ec20300be0f9addf226a3"
+    },
+    {
+      "path": "setup/constraints-sim.txt",
+      "mode": "100644",
+      "git_blob": "3d51ad32807f517a29456dcc92941b1842b46a43",
+      "available": true,
+      "sha256": "e4f2027e37cb7a83d0cd905c4da0089b9a89c1f4176db192310db95472b9a06f"
+    },
+    {
+      "path": "setup/fetch_assets.py",
+      "mode": "100644",
+      "git_blob": "e021e8928c458c7a4fe8802ac70564fc9f166213",
+      "available": true,
+      "sha256": "ed0e3886a60764daf88c448326f7fa75b922f645dc2b91b7a1cfe0d61a6ee0af"
+    },
+    {
+      "path": "setup/fetch_reference.py",
+      "mode": "100644",
+      "git_blob": "85bc7c0f199d8f44a945d777551cc7f325ab9396",
+      "available": true,
+      "sha256": "36e7092d7ff72405f1e0c3f64dbd413d0a1cbdee5b0eeb53956d95329926c3ec"
+    },
+    {
+      "path": "setup/paths.sh",
+      "mode": "100644",
+      "git_blob": "2181ea1733a41acc4e813a82ba758645f6d260d3",
+      "available": true,
+      "sha256": "d01b16f52925d44382e801ae4ee56e975571e64a7864d0fa0486829bf0dc33a6"
+    },
+    {
+      "path": "setup/requirements-policy.txt",
+      "mode": "100644",
+      "git_blob": "d914b766c701c133abe689a6944bef1e7d65f3b3",
+      "available": true,
+      "sha256": "3d1463b60ccf3fb17b3c341e99ee7ff176802ec902d6201fc013e5a06976322e"
+    },
+    {
+      "path": "setup/requirements-sim.txt",
+      "mode": "100644",
+      "git_blob": "2d923e3955b84ded9b2883e3d7b97bae8f2d0781",
+      "available": true,
+      "sha256": "0ce9fc15b82835e186836c5c8d64156fd757f819836401419dc7c3543a43791a"
+    },
+    {
+      "path": "tests/test_ik_execution.py",
+      "mode": "100644",
+      "git_blob": "6e803288433b6aafa17878e9c16ffddf2b7b8f91",
+      "available": true,
+      "sha256": "01c37764da9ef4be0f98615ab3bc129ac72b14bfa25735d6a68add701639152d"
+    },
+    {
+      "path": "tests/test_reference_setting.py",
+      "mode": "100644",
+      "git_blob": "7e5bcabc81ff8a592946d9a903c96d991f39f745",
+      "available": true,
+      "sha256": "3e449b4edd3370791010da21bb3612ffee3446ffd28bd7216205a4ab1edf4be6"
+    },
+    {
+      "path": "third_party/IsaacLab",
+      "mode": "160000",
+      "git_blob": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+      "available": false
+    },
+    {
+      "path": "third_party/RoboDojo",
+      "mode": "160000",
+      "git_blob": "00ef04cd245bfa76e6f1e0bd8383c82f7964f942",
+      "available": false
+    },
+    {
+      "path": "third_party/XPolicyLab",
+      "mode": "160000",
+      "git_blob": "fa431ecd893ee706883e64fe5fe1464ec8cd928d",
+      "available": false
+    },
+    {
+      "path": "third_party/curobo",
+      "mode": "160000",
+      "git_blob": "895c6517243f8cb091c73c018c8167192d39599a",
+      "available": false
+    }
+  ]
+}

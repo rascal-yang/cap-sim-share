@@ -1,0 +1,3 @@
+{"step": 0, "execution_note": "SYNTHETIC protocol test", "requested_tensor": [[0.001, 0, 0, 0, 0, 0, 0.5, 0.001, 0, 0, 0, 0, 0, 0.5], [0.001, 0, 0, 0, 0, 0, 0.5, 0.001, 0, 0, 0, 0, 0, 0.5]], "dispatched_steps": 2}
+{"step": 0, "execution_note": "SYNTHETIC protocol test", "requested_tensor": [[0.001, 0, 0, 0, 0, 0, 0.5, 0.001, 0, 0, 0, 0, 0, 0.5], [0.001, 0, 0, 0, 0, 0, 0.5, 0.001, 0, 0, 0, 0, 0, 0.5]], "dispatched_steps": 2}
+{"step": 1, "execution_note": "SYNTHETIC protocol test", "requested_tensor": [[0.001, 0, 0, 0, 0, 0, 0.5, 0.001, 0, 0, 0, 0, 0, 0.5], [0.001, 0, 0, 0, 0, 0, 0.5, 0.001, 0, 0, 0, 0, 0, 0.5]], "dispatched_steps": 2}

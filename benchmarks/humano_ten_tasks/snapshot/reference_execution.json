@@ -1,0 +1,47 @@
+[
+  {
+    "task": "G1WholebodyChairPushTeleop",
+    "returncode": 0,
+    "wall_s": 338.16797852516174
+  },
+  {
+    "task": "G1WholebodyChairSitTeleop",
+    "returncode": 0,
+    "wall_s": 185.87059807777405
+  },
+  {
+    "task": "G1WholebodyDollyPushTeleop",
+    "returncode": 0,
+    "wall_s": 372.2446005344391
+  },
+  {
+    "task": "G1WholebodyGroundBasketPickTeleop",
+    "returncode": 0,
+    "wall_s": 340.4830460548401
+  },
+  {
+    "task": "G1WholebodyGroundBottlePickTeleop",
+    "returncode": 0,
+    "wall_s": 259.3015367984772
+  },
+  {
+    "task": "G1WholebodyGroundBoxPickTeleop",
+    "returncode": 0,
+    "wall_s": 363.7564215660095
+  },
+  {
+    "task": "G1WholebodyTableApplePickTeleop",
+    "returncode": 0,
+    "wall_s": 314.142352104187
+  },
+  {
+    "task": "G1WholebodyTableButtonPressTeleop",
+    "returncode": 0,
+    "wall_s": 270.1345694065094
+  },
+  {
+    "task": "G1WholebodyTablePlatePickTeleop",
+    "returncode": 0,
+    "wall_s": 372.1544260978699
+  }
+]

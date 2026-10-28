@@ -1,0 +1,1 @@
+{"turn": 1, "call_id": "invalid", "executed": false, "executed_steps": 0, "observation_step": 0, "error": "invalid_action_tensor", "detail": "actions must contain exactly 2 control steps; no padding or truncation", "recovery": "No motion occurred. Correct the tensor from the SAME latest observation; do not compensate for unexecuted motion.", "correction_allowed": true}

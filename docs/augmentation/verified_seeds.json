@@ -1,0 +1,26 @@
+{
+  "baseline": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation",
+  "conditions": {
+    "object_shift_xy_m": [
+      0.005,
+      0
+    ]
+  },
+  "tasks": [
+    {
+      "task": "G1WholebodyChairSitTeleop",
+      "verified_seed": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyChairSitTeleop/G1WholebodyChairSitTeleop/attempt_00/result.json",
+      "source_case": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyChairSitTeleop/G1WholebodyChairSitTeleop/experiments/20261023_1103_chairsit_token_prefix_mode1"
+    },
+    {
+      "task": "G1WholebodyTableApplePickTeleop",
+      "verified_seed": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyTableApplePickTeleop/G1WholebodyTableApplePickTeleop/attempt_00/result.json",
+      "source_case": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyTableApplePickTeleop/G1WholebodyTableApplePickTeleop/experiments/20261023_1104_tableapplepick_token_prefix_mode1"
+    },
+    {
+      "task": "G1WholebodyTableButtonPressTeleop",
+      "verified_seed": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyTableButtonPressTeleop/G1WholebodyTableButtonPressTeleop/attempt_00/result.json",
+      "source_case": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyTableButtonPressTeleop/G1WholebodyTableButtonPressTeleop/experiments/20261023_1107_tablebuttonpress_token_prefix_mode1"
+    }
+  ]
+}

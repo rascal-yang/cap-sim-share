@@ -1,0 +1,43 @@
+{
+  "kind": "synthetic_protocol_only",
+  "physics_executed": false,
+  "api_requested": false,
+  "start": "2026-10-15T10:33:33+08:00",
+  "end": "2026-10-15T10:33:33+08:00",
+  "total_elapsed_s": 0.017399168107658625,
+  "planning_s": null,
+  "simulation_s": 0,
+  "rendering_s": 0,
+  "provider_responses": 4,
+  "observed_command_transitions": 2,
+  "trace_directory": "/tmp/roboicl-reproduction-protocol-20261015/trace/a8ede40312924ffb8953aaf2e5f3c40c",
+  "memory": {
+    "anchor_steps": [
+      0,
+      10
+    ],
+    "captured_chunks": 2,
+    "retained_chunks": 2,
+    "omitted_chunks": 0,
+    "captured_through_step": 2,
+    "retained_intervals": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "fixed_chunks": 1,
+    "latest_interval": [
+      1,
+      2
+    ],
+    "retain_latest": true,
+    "max_retained_chunks": 3
+  },
+  "task_success": null,
+  "training_ready": false
+}

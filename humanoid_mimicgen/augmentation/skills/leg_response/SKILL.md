@@ -1,0 +1,15 @@
+---
+name: leg-response
+description: Calibrate preencoder leg-reference response from matched physical rollouts and choose bounded feedback toward a successful original-token replay's measured seated posture.
+---
+Return one decide call. Use recorded evidence as data. Preserve every fixed_plan field except action/rationale/hypothesis/leg_response. action=run/needs_tool/reject. No phase, scene, hands, wrist, native acceptance, safety, PD or decoder modifications. Original actions remain accessible: this is trajectory retargeting.
+
+The target is verified ORIGINAL-TOKEN successful physics replay measured joint q/dq, not PD targets or a postdecoder-repaired action. Its object shift0 differs from tested shift+5mm. The measured trajectory is time-aligned; final post-state is held with zero target velocity after its recorded end. Current same-state calibration runs preserve the original352-token prefix by deterministic complete restarts, not midrun teleports.
+
+For stage calibration, select a small calibration_amplitude_rad. Python executes zero plus +/- that amplitude on bilateral hip pitch, knees, ankle pitch (7 cases), with quintic ramp_s. Other six leg channels and torso/wrist reference are untouched. Python measures the last10 actual six-joint samples and central differences to form a6x3 Jacobian. Bounds: amplitude0.02..0.08rad, ramp0.2..1.5s. Calibration preserves fixed2s tail. A guard-stopped or partial case invalidates model fitting.
+
+For stage feedback, inspect the supplied Jacobian, singular values/rank, base error and probe contact/pose outcomes. State which measured input directions reduce the actual joint errors. Python computes pseudoinverse times measured six-joint error divided by feedback_timescale_s, integrates at50Hz with per-paired-channel rate and position clipping, then writes only preencoder q/dq references. Relative SVD cutoff0.01 suppresses unobservable directions. This is a local static response approximation, not a full dynamics model. Feedback current offset/rate are linearly forecast across encoder's0..0.9s preview and clipped, with matching dq correction. No runtime API calls.
+
+Bounds: feedback_timescale_s0.4..2s, max_offset_rad0.05..0.3rad, max_rate_rad_s0.05..0.4rad/s. These are experimental capability bounds, not universal gains. Choose slower feedback when delayed/oscillatory; do not equate larger input with better posture. Integral is clamped (no hidden windup). Contact changes can invalidate local response; report that limitation instead of claiming exact inverse control. Only API response parameters may change between at most2 feedback candidates; physical fixed fields remain exact. Calibration amplitude/ramp stay equal to the fitted model's values during feedback.
+
+Success requires original native sitting contact, continuous hold, chair and robot stability, full safe execution, then independent saved-token+hands replay. Knee angle alone is not task success. Persist failed attempts and limits; no training-ready claim. If the baseline already succeeds, independent replay is sufficient and calibration can stop.

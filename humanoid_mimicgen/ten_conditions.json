@@ -1,0 +1,12 @@
+[
+  {"id":"y_minus_10cm","translation":[0,-0.1,0],"table_delta":0,"historical_note":"Historical Y-10 retained an extra index-finger gate; not a matched control baseline."},
+  {"id":"y_plus_10cm","translation":[0,0.1,0],"table_delta":0,"historical_note":"Use y_plus_10cm_restored_gate for historical evidence."},
+  {"id":"y_minus_15cm","translation":[0,-0.15,0],"table_delta":0},
+  {"id":"y_plus_15cm","translation":[0,0.15,0],"table_delta":0},
+  {"id":"y_minus_20cm","translation":[0,-0.2,0],"table_delta":0},
+  {"id":"y_plus_20cm","translation":[0,0.2,0],"table_delta":0},
+  {"id":"table_plus_7p5cm","translation":[0,0,0.075],"table_delta":0.075},
+  {"id":"table_minus_7p5cm","translation":[0,0,-0.075],"table_delta":-0.075},
+  {"id":"table_plus_10cm","translation":[0,0,0.1],"table_delta":0.1},
+  {"id":"table_minus_10cm","translation":[0,0,-0.1],"table_delta":-0.1}
+]

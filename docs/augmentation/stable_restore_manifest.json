@@ -1,0 +1,30 @@
+{
+  "baseline": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation",
+  "backup_commit": "71f7c28",
+  "differences": [
+    {
+      "path": "humanoid_mimicgen/augmentation/contact_batch.py",
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyChairSitTeleop/G1WholebodyChairSitTeleop/experiments/20261023_1103_chairsit_token_prefix_mode1/source_snapshot/018_contact_batch.py",
+      "restored": true,
+      "sha256": "1817686bd2fb0ed192511b54b343ef92396d3e78d4e4cd53e4bdbad85d83e85d"
+    },
+    {
+      "path": "humanoid_mimicgen/augmentation/contact_review.py",
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyChairSitTeleop/G1WholebodyChairSitTeleop/experiments/20261023_1103_chairsit_token_prefix_mode1/source_snapshot/031_contact_review.py",
+      "restored": true,
+      "sha256": "6f55daa0eaf617ece0c62aaea01dded86625dcfdccd790414c29a73cd0c1b9df"
+    },
+    {
+      "path": "humanoid_mimicgen/augmentation/skills/contact_review/SKILL.md",
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyChairSitTeleop/G1WholebodyChairSitTeleop/experiments/20261023_1103_chairsit_token_prefix_mode1/source_snapshot/041_SKILL.md",
+      "restored": true,
+      "sha256": "30b2ff0f5711c769b7818298813d7c470bfee3ae221320de7b9180185d73a79f"
+    },
+    {
+      "path": "humanoid_mimicgen/augmentation/suite_provider.py",
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/23/20261023_1102_api_ten_tasks_rollback_validation/tasks/G1WholebodyChairSitTeleop/G1WholebodyChairSitTeleop/experiments/20261023_1103_chairsit_token_prefix_mode1/source_snapshot/035_suite_provider.py",
+      "restored": false,
+      "sha256": "6ee7cdb4077cb94ff19ba7ebb02b59463e907f84387162a0749b0fa61e6e065b"
+    }
+  ]
+}

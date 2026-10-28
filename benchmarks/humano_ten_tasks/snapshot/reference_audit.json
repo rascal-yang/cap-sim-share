@@ -1,0 +1,126 @@
+{
+  "created_unix_s": 1791853897.8840704,
+  "cases": [
+    {
+      "task": "G1WholebodyBallKickTeleop",
+      "episode": 0,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyBallKickTeleop/data/chunk-000/episode_000000.parquet",
+      "source_sha256": "fd25919d037f6dc9d27563c6d11160d5550855e58c4dba1acddf2aa274d23f2d",
+      "native_success_from_saved_states": true,
+      "first_success_s": 2.579999999999945,
+      "first_hand_contact_s": null,
+      "peak_hand_force_N": 0.0,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 4.899158239364624
+    },
+    {
+      "task": "G1WholebodyChairPushTeleop",
+      "episode": 0,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyChairPushTeleop/data/chunk-000/episode_000000.parquet",
+      "source_sha256": "b66c6a64724fd69760cecdcebdd15e37981e12783cde63e527a9dcca99d5e495",
+      "native_success_from_saved_states": true,
+      "first_success_s": 12.00000000000081,
+      "first_hand_contact_s": 3.3999999999999275,
+      "peak_hand_force_N": 108.76256918142928,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 2.490251064300537
+    },
+    {
+      "task": "G1WholebodyChairSitTeleop",
+      "episode": 1,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyChairSitTeleop/data/chunk-000/episode_000001.parquet",
+      "source_sha256": "6809a9e8693506d08c68627ef4aad69cd3d93c8556f8d630b4b33b4c159c87ce",
+      "native_success_from_saved_states": false,
+      "first_success_s": null,
+      "first_hand_contact_s": null,
+      "peak_hand_force_N": 0.0,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 5.486862421035767
+    },
+    {
+      "task": "G1WholebodyDollyPushTeleop",
+      "episode": 1,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyDollyPushTeleop/data/chunk-000/episode_000001.parquet",
+      "source_sha256": "05ccdea7d37daa55e3b7d412972f44f7acfde725a9560e1279f0531094a23f4c",
+      "native_success_from_saved_states": true,
+      "first_success_s": 11.68000000000076,
+      "first_hand_contact_s": 2.899999999999938,
+      "peak_hand_force_N": 142.29765724358342,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 3.9999287128448486
+    },
+    {
+      "task": "G1WholebodyGroundBasketPickTeleop",
+      "episode": 0,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyGroundBasketPickTeleop/data/chunk-000/episode_000000.parquet",
+      "source_sha256": "5b61dc282c0b77fd0d1fd1f5bca2d2741b951c67ffb18e631418508850ca9014",
+      "native_success_from_saved_states": true,
+      "first_success_s": 14.520000000001017,
+      "first_hand_contact_s": 5.499999999999883,
+      "peak_hand_force_N": 33.99503168029433,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 2.5350255966186523
+    },
+    {
+      "task": "G1WholebodyGroundBottlePickTeleop",
+      "episode": 0,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyGroundBottlePickTeleop/data/chunk-000/episode_000000.parquet",
+      "source_sha256": "bfa3adf50dc82d611885252e6c75e6dc2d1f2a0bd65712a2875e98d43a9f011d",
+      "native_success_from_saved_states": true,
+      "first_success_s": 11.060000000000663,
+      "first_hand_contact_s": 10.14000000000052,
+      "peak_hand_force_N": 18.12493858369099,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 1.975034236907959
+    },
+    {
+      "task": "G1WholebodyGroundBoxPickTeleop",
+      "episode": 0,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyGroundBoxPickTeleop/data/chunk-000/episode_000000.parquet",
+      "source_sha256": "1d0895d97f61f014b08f4735644c1a45f55b7dd5d5f6088098999fcf4ff0a2a7",
+      "native_success_from_saved_states": true,
+      "first_success_s": 13.080000000000979,
+      "first_hand_contact_s": 5.099999999999891,
+      "peak_hand_force_N": 24.121214779091677,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 2.32659649848938
+    },
+    {
+      "task": "G1WholebodyTableApplePickTeleop",
+      "episode": 1,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyTableApplePickTeleop/data/chunk-000/episode_000001.parquet",
+      "source_sha256": "ea2a761a14cabd5e8cdbdc92389786e935356bdac555fb530152cf314ab5893e",
+      "native_success_from_saved_states": false,
+      "first_success_s": null,
+      "first_hand_contact_s": 4.179999999999911,
+      "peak_hand_force_N": 48.13398369344752,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 1.764122486114502
+    },
+    {
+      "task": "G1WholebodyTableButtonPressTeleop",
+      "episode": 1,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyTableButtonPressTeleop/data/chunk-000/episode_000001.parquet",
+      "source_sha256": "395e8bb452da13f73d1c2b516afc0415161dc339fb76d1bb111eccd22c6e47dc",
+      "native_success_from_saved_states": false,
+      "first_success_s": null,
+      "first_hand_contact_s": 3.2999999999999297,
+      "peak_hand_force_N": 35.758630478676125,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 2.364309787750244
+    },
+    {
+      "task": "G1WholebodyTablePlatePickTeleop",
+      "episode": 0,
+      "source": "/home/kinetra-4090-01/code/zijian/experiments/20261013_cap_ten_tasks/dataset/G1WholebodyTablePlatePickTeleop/data/chunk-000/episode_000000.parquet",
+      "source_sha256": "bc02eff642325d886c00ef72fca74bbddd306bacf286326cb59e69986e46a7e6",
+      "native_success_from_saved_states": true,
+      "first_success_s": 7.000000000000028,
+      "first_hand_contact_s": 5.919999999999874,
+      "peak_hand_force_N": 36.06677965724878,
+      "control_evidence": "PD reconstructed from recorded action.wbc and sampled qpos/qvel; contact forces are estimates, not exact recorded forces",
+      "wall_s": 1.7006478309631348
+    }
+  ],
+  "limitation": "Recorded control torque is absent. Contacts/native force checks use reconstructed PD torques at sampled states; not exact measured forces or successful controller reexecution. Three cases remain unverified after inspecting two references and are reported separately."
+}

@@ -1,0 +1,39 @@
+{
+  "files": {
+    "model": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/scene.mjb",
+    "trajectory": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/execution/trajectory.npz",
+    "result": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/result.json",
+    "spec": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_2022_four_task_positions/apple_00_spec.json",
+    "contact_contract": "/home/kinetra-4090-01/code/zijian/experiments/2026-10/25/20261025_1709_rollback_apple_expanded_queue/apple/verify_full/experiments/20261025_1719_tableapplepick_token_prefix_mode1/contact_contract.json"
+  },
+  "bindings": {
+    "object": "apple_001",
+    "root_body": "pelvis",
+    "feet": [
+      "left_ankle_roll_link",
+      "right_ankle_roll_link"
+    ],
+    "ground_geoms": [
+      "ground"
+    ],
+    "support_geoms": [
+      "table_geom"
+    ],
+    "frame": {
+      "kind": "world_heading",
+      "yaw_rad": 0.0,
+      "evidence": "Archived fixed scene world X; new scene must explicitly supply surface heading"
+    },
+    "operation_bodies": [
+      "right_wrist_yaw_link"
+    ],
+    "contact_policy": []
+  },
+  "entry_index": 1384,
+  "end_index": 1875,
+  "state_key": "state",
+  "support_distance_m": 0.002,
+  "success_field": "native_success",
+  "success_criterion": "native",
+  "notes": "Real frozen record reference, not a synthetic fixture. Empty contact exemptions intentionally cannot certify full contact operation."
+}

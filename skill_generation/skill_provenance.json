@@ -1,0 +1,11 @@
+{
+  "source_skill_version": 13,
+  "source_skill_revision_sha256": "e6e42ec17295e7975687757372848de3ab7cee6894eba45c268d7038987c4af2",
+  "source_artifact_sha256": "dcae3c4234621b7181cfeed21bd10adbadf448bd1e0563cf0be69eaeaf452636",
+  "source_artifact": "/home/kinetra-4090-01/code/zijian/cap-sim/task_skills/g1_dex3_apple_pick/v0013/skill.json",
+  "author": "GPT/Codex in current conversation",
+  "extraction": "Transfer contact geometry, phase gates, failure diagnosis and scope only; omit recorded actions/native-prefix strategy",
+  "executor_receives_source_trajectory": false,
+  "published": false,
+  "physical_validation_of_new_strategy": false
+}

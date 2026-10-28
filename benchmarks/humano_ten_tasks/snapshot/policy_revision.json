@@ -1,0 +1,7 @@
+{
+  "unix_s": 1791854055.7644823,
+  "old_policy_sha256": "ba317e8c24b964d12e5d99007b37aa8e18ad23ba88bfd6d0820921ef15a0807d",
+  "new_policy_sha256": "8ec218fa14c97389d5ce00ccd59327c4c2f4e0280594ecf0eee090702d467ac7",
+  "reason": "Bilateral hand contacts must be same-event contacts with target bodies, not table/ground. Quality screening requires multiple target-contact parts in each of last 24 physics samples.",
+  "boundary": "Ball reference complete; ChairPush running with already loaded old policy, unaffected because it does not use lift gate. No reference pick attempt has started. No-reference results remain frozen; generic bilateral event test is a known limitation of failed no-reference picks."
+}
